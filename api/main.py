@@ -1,10 +1,13 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
-from slowapi import _rate_limit_exceeded_handler
+from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
+from slowapi.util import get_remote_address
 
-from routes.open_router import router as open_router, limiter
+from .routes.open_router import router as open_router
+
+limiter = Limiter(key_func=get_remote_address)
 
 app = FastAPI()
 
