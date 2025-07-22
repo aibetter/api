@@ -17,5 +17,10 @@ app.add_middleware(
 app.include_router(open_router)
 
 
+@app.get("/")
+def read_root():
+    return {"message": "https://github.com/aibetter/api.git"}
+
+
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
