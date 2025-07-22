@@ -48,19 +48,3 @@ def get_models(request: Request, name: str = None, free_only: bool = False):
         ]
 
     return {"total": len(models), "models": models}
-
-
-@router.get("/test-rate-limit")
-def test_rate_limit(request: Request):
-    """
-    Test endpoint for rate limiting - allows only 5 requests per minute
-    """
-    # Get limiter from app state
-    limiter = request.app.state.limiter
-    # Apply rate limit
-    limiter.limit("5/minute")(request)
-
-    return {
-        "message": "Rate limit test successful",
-        "timestamp": str(__import__("datetime").datetime.now()),
-    }
