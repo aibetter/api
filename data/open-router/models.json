@@ -23,7 +23,6 @@
       "completion": "0.000000015",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -75,7 +74,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -127,7 +125,6 @@
       "completion": "0.000008",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -171,7 +168,6 @@
       "completion": "0.0000004",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -215,7 +211,6 @@
       "completion": "0.000008",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -257,7 +252,6 @@
       "completion": "0.0000014",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -299,7 +293,6 @@
       "completion": "0.0000002",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -339,7 +332,6 @@
       "completion": "0.0000011",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -382,11 +374,10 @@
       "instruct_type": "airoboros"
     },
     "pricing": {
-      "prompt": "0.000005",
-      "completion": "0.00000625",
+      "prompt": "0.000004",
+      "completion": "0.0000055",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -438,7 +429,6 @@
       "completion": "0.00000024",
       "request": "0",
       "image": "0.00009",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -481,7 +471,6 @@
       "completion": "0.00000014",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -525,7 +514,6 @@
       "completion": "0.0000032",
       "request": "0",
       "image": "0.0012",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -568,7 +556,6 @@
       "completion": "0.000003",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -612,17 +599,16 @@
       "instruct_type": "chatml"
     },
     "pricing": {
-      "prompt": "0.00000125",
-      "completion": "0.0000015",
+      "prompt": "0.000002",
+      "completion": "0.000005",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
     "top_provider": {
       "context_length": 16384,
-      "max_completion_tokens": 1024,
+      "max_completion_tokens": 2048,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -666,7 +652,6 @@
       "completion": "0.00000125",
       "request": "0",
       "image": "0.0004",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.00000003",
@@ -713,7 +698,6 @@
       "completion": "0.000075",
       "request": "0",
       "image": "0.024",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.0000015",
@@ -760,7 +744,6 @@
       "completion": "0.000004",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.00000008",
@@ -808,7 +791,6 @@
       "completion": "0.000004",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.00000008",
@@ -856,7 +838,6 @@
       "completion": "0.000015",
       "request": "0",
       "image": "0.0048",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.0000003",
@@ -904,7 +885,6 @@
       "completion": "0.000015",
       "request": "0",
       "image": "0.0048",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.0000003",
@@ -952,7 +932,6 @@
       "completion": "0.000015",
       "request": "0",
       "image": "0.0048",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.0000003",
@@ -974,54 +953,6 @@
       "tools",
       "top_k",
       "top_p"
-    ]
-  },
-  {
-    "id": "anthropic/claude-3.7-sonnet:beta",
-    "canonical_slug": "anthropic/claude-3-7-sonnet-20250219",
-    "hugging_face_id": "",
-    "name": "Anthropic: Claude 3.7 Sonnet (self-moderated)",
-    "created": 1740422110,
-    "description": "Claude 3.7 Sonnet is an advanced large language model with improved reasoning, coding, and problem-solving capabilities. It introduces a hybrid reasoning approach, allowing users to choose between rapid responses and extended, step-by-step processing for complex tasks. The model demonstrates notable improvements in coding, particularly in front-end development and full-stack updates, and excels in agentic workflows, where it can autonomously navigate multi-step processes. \n\nClaude 3.7 Sonnet maintains performance parity with its predecessor in standard mode while offering an extended reasoning mode for enhanced accuracy in math, coding, and instruction-following tasks.\n\nRead more at the [blog post here](https://www.anthropic.com/news/claude-3-7-sonnet)",
-    "context_length": 200000,
-    "architecture": {
-      "modality": "text+image->text",
-      "input_modalities": [
-        "text",
-        "image",
-        "file"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "tokenizer": "Claude",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.000003",
-      "completion": "0.000015",
-      "request": "0",
-      "image": "0.0048",
-      "audio": "0",
-      "web_search": "0",
-      "internal_reasoning": "0",
-      "input_cache_read": "0.0000003",
-      "input_cache_write": "0.00000375"
-    },
-    "top_provider": {
-      "context_length": 200000,
-      "max_completion_tokens": 128000,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "supported_parameters": [
-      "include_reasoning",
-      "max_tokens",
-      "reasoning",
-      "stop",
-      "temperature",
-      "tool_choice",
-      "tools"
     ]
   },
   {
@@ -1050,7 +981,6 @@
       "completion": "0.000015",
       "request": "0",
       "image": "0.0048",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.0000003",
@@ -1098,7 +1028,6 @@
       "completion": "0.000075",
       "request": "0",
       "image": "0.024",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.0000015",
@@ -1148,7 +1077,6 @@
       "completion": "0.000075",
       "request": "0",
       "image": "0.024",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.0000015",
@@ -1196,7 +1124,6 @@
       "completion": "0.000015",
       "request": "0",
       "image": "0.0048",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.0000003",
@@ -1244,7 +1171,6 @@
       "completion": "0.0000008",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -1291,7 +1217,6 @@
       "completion": "0.0000033",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -1339,7 +1264,6 @@
       "completion": "0.00000018",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -1386,7 +1310,6 @@
       "completion": "0.0000012",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -1435,7 +1358,6 @@
       "completion": "0.0000000400032",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -1487,7 +1409,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -1539,7 +1460,6 @@
       "completion": "0.00000028",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -1587,7 +1507,6 @@
       "completion": "0.0000011",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -1636,13 +1555,62 @@
       "completion": "0.00000056",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
     "top_provider": {
       "context_length": 30000,
       "max_completion_tokens": 8000,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "seed",
+      "stop",
+      "temperature",
+      "top_k",
+      "top_p"
+    ]
+  },
+  {
+    "id": "baidu/ernie-4.5-vl-424b-a47b",
+    "canonical_slug": "baidu/ernie-4.5-vl-424b-a47b",
+    "hugging_face_id": "baidu/ERNIE-4.5-VL-424B-A47B-PT",
+    "name": "Baidu: ERNIE 4.5 VL 424B A47B ",
+    "created": 1751300903,
+    "description": "ERNIE-4.5-VL-424B-A47B is a multimodal Mixture-of-Experts (MoE) model from Baidu’s ERNIE 4.5 series, featuring 424B total parameters with 47B active per token. It is trained jointly on text and image data using a heterogeneous MoE architecture and modality-isolated routing to enable high-fidelity cross-modal reasoning, image understanding, and long-context generation (up to 131k tokens). Fine-tuned with techniques like SFT, DPO, UPO, and RLVR, this model supports both “thinking” and non-thinking inference modes. Designed for vision-language tasks in English and Chinese, it is optimized for efficient scaling and can operate under 4-bit/8-bit quantization.",
+    "context_length": 123000,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "image",
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000042",
+      "completion": "0.00000125",
+      "request": "0",
+      "image": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 123000,
+      "max_completion_tokens": 16000,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -1687,7 +1655,6 @@
       "completion": "0.0000002",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -1734,7 +1701,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -1780,7 +1746,6 @@
       "completion": "0.0000009",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -1828,7 +1793,6 @@
       "completion": "0.00000014816",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -1878,7 +1842,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -1928,7 +1891,6 @@
       "completion": "0.0000000340768",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -1980,7 +1942,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -2032,7 +1993,6 @@
       "completion": "0.000002",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -2079,7 +2039,6 @@
       "completion": "0.000008",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -2126,7 +2085,6 @@
       "completion": "0.0000015",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -2174,7 +2132,6 @@
       "completion": "0.0000015",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -2222,7 +2179,6 @@
       "completion": "0.0000006",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -2270,7 +2226,6 @@
       "completion": "0.000015",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -2318,7 +2273,6 @@
       "completion": "0.000015",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -2366,7 +2320,6 @@
       "completion": "0.00001",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -2414,7 +2367,6 @@
       "completion": "0.00000015",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -2457,11 +2409,10 @@
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.00000017992692",
-      "completion": "0.0000007200576",
+      "prompt": "0.0000001999188",
+      "completion": "0.000000800064",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -2511,11 +2462,10 @@
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.00000017992692",
-      "completion": "0.0000007200576",
+      "prompt": "0.0000001999188",
+      "completion": "0.000000800064",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -2569,7 +2519,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -2589,6 +2538,61 @@
       "repetition_penalty",
       "seed",
       "stop",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ]
+  },
+  {
+    "id": "deepseek/deepseek-chat-v3.1",
+    "canonical_slug": "deepseek/deepseek-chat-v3.1",
+    "hugging_face_id": "deepseek-ai/DeepSeek-V3.1",
+    "name": "DeepSeek: DeepSeek V3.1",
+    "created": 1755779628,
+    "description": "DeepSeek-V3.1 is a large hybrid reasoning model (671B parameters, 37B active) that supports both thinking and non-thinking modes via prompt templates. It extends the DeepSeek-V3 base with a two-phase long-context training process, reaching up to 128K tokens, and uses FP8 microscaling for efficient inference.\n\nThe model improves tool use, code generation, and reasoning efficiency, achieving performance comparable to DeepSeek-R1 on difficult benchmarks while responding more quickly. It supports structured tool calling, code agents, and search agents, making it suitable for research, coding, and agentic workflows.\n\nIt succeeds the [DeepSeek V3-0324](/deepseek/deepseek-chat-v3-0324) model and performs well on a variety of tasks.",
+    "context_length": 163840,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "DeepSeek",
+      "instruct_type": "deepseek-v3.1"
+    },
+    "pricing": {
+      "prompt": "0.0000002",
+      "completion": "0.0000008",
+      "request": "0",
+      "image": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 163840,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
       "temperature",
       "tool_choice",
       "tools",
@@ -2621,7 +2625,6 @@
       "completion": "0.00000218",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -2669,7 +2672,6 @@
       "completion": "0.000002",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -2721,11 +2723,10 @@
       "instruct_type": "deepseek-r1"
     },
     "pricing": {
-      "prompt": "0.00000017992692",
-      "completion": "0.0000007200576",
+      "prompt": "0.0000001999188",
+      "completion": "0.000000800064",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -2781,7 +2782,6 @@
       "completion": "0.00000002",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -2833,7 +2833,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -2885,7 +2884,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -2937,7 +2935,6 @@
       "completion": "0.000000133344",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -2960,7 +2957,6 @@
       "response_format",
       "seed",
       "stop",
-      "structured_outputs",
       "temperature",
       "tool_choice",
       "tools",
@@ -2993,7 +2989,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -3045,7 +3040,6 @@
       "completion": "0.00000004",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -3095,7 +3089,6 @@
       "completion": "0.00000018",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -3144,7 +3137,6 @@
       "completion": "0.00000015",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -3194,7 +3186,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -3246,7 +3237,6 @@
       "completion": "0.00000015",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -3297,7 +3287,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -3338,7 +3327,55 @@
       "completion": "0.000000800064",
       "request": "0",
       "image": "0",
-      "audio": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 163840,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "repetition_penalty",
+      "seed",
+      "stop",
+      "temperature",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ]
+  },
+  {
+    "id": "deepseek/deepseek-v3.1-base",
+    "canonical_slug": "deepseek/deepseek-v3.1-base",
+    "hugging_face_id": "deepseek-ai/DeepSeek-V3.1-Base",
+    "name": "DeepSeek: DeepSeek V3.1 Base",
+    "created": 1755727017,
+    "description": "This is a base model, trained only for raw next-token prediction. Unlike instruct/chat models, it has not been fine-tuned to follow user instructions. Prompts need to be written more like training text or examples rather than simple requests (e.g., “Translate the following sentence…” instead of just “Translate this”).\n\nDeepSeek-V3.1 Base is a 671B parameter open Mixture-of-Experts (MoE) language model with 37B active parameters per forward pass and a context length of 128K tokens. Trained on 14.8T tokens using FP8 mixed precision, it achieves high training efficiency and stability, with strong performance across language, reasoning, math, and coding tasks. \n",
+    "context_length": 163840,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "DeepSeek",
+      "instruct_type": "none"
+    },
+    "pricing": {
+      "prompt": "0.0000002",
+      "completion": "0.0000008",
+      "request": "0",
+      "image": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -3388,7 +3425,6 @@
       "completion": "0.0000012",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -3435,7 +3471,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -3534,7 +3569,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -3582,7 +3616,6 @@
       "completion": "0.0000003",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -3631,7 +3664,6 @@
       "completion": "0.0000025",
       "request": "0",
       "image": "0.001238",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.000000075",
@@ -3684,7 +3716,6 @@
       "completion": "0.0000004",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.000000025",
@@ -3737,7 +3768,6 @@
       "completion": "0.0000004",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.000000025",
@@ -3790,7 +3820,6 @@
       "completion": "0.00001",
       "request": "0",
       "image": "0.00516",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.00000031",
@@ -3842,7 +3871,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -3891,7 +3919,6 @@
       "completion": "0.00001",
       "request": "0",
       "image": "0.00516",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.00000031",
@@ -3944,7 +3971,6 @@
       "completion": "0.00001",
       "request": "0",
       "image": "0.00516",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.00000031",
@@ -3995,7 +4021,6 @@
       "completion": "0.0000003",
       "request": "0",
       "image": "0.00004",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.00000001875",
@@ -4046,7 +4071,6 @@
       "completion": "0.00000015",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.00000001",
@@ -4097,7 +4121,6 @@
       "completion": "0.000005",
       "request": "0",
       "image": "0.0006575",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -4145,7 +4168,6 @@
       "completion": "0.00000065",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -4194,7 +4216,6 @@
       "completion": "0.0000000100008",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -4245,7 +4266,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -4296,7 +4316,6 @@
       "completion": "0.000000192608",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -4330,7 +4349,7 @@
     "name": "Google: Gemma 3 12B (free)",
     "created": 1741902625,
     "description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling. Gemma 3 12B is the second largest in the family of Gemma 3 models after [Gemma 3 27B](google/gemma-3-27b-it)",
-    "context_length": 96000,
+    "context_length": 32768,
     "architecture": {
       "modality": "text+image->text",
       "input_modalities": [
@@ -4348,12 +4367,11 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 96000,
+      "context_length": 32768,
       "max_completion_tokens": 8192,
       "is_moderated": false
     },
@@ -4366,10 +4384,8 @@
       "min_p",
       "presence_penalty",
       "repetition_penalty",
-      "response_format",
       "seed",
       "stop",
-      "structured_outputs",
       "temperature",
       "top_k",
       "top_logprobs",
@@ -4401,7 +4417,6 @@
       "completion": "0.000000266688",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -4422,6 +4437,7 @@
       "response_format",
       "seed",
       "stop",
+      "structured_outputs",
       "temperature",
       "top_k",
       "top_logprobs",
@@ -4453,7 +4469,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -4506,7 +4521,6 @@
       "completion": "0.00000004",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -4555,7 +4569,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -4598,7 +4611,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -4643,7 +4655,6 @@
       "completion": "0.00000004",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -4690,7 +4701,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -4735,7 +4745,6 @@
       "completion": "0.00000006",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -4786,7 +4795,6 @@
       "completion": "0.000001",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -4834,7 +4842,6 @@
       "completion": "0.000001",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -4882,7 +4889,6 @@
       "completion": "0.000001",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -4929,7 +4935,6 @@
       "completion": "0.00001",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -4970,7 +4975,6 @@
       "completion": "0.00001",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -5011,7 +5015,6 @@
       "completion": "0.00000002",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -5031,57 +5034,6 @@
       "stop",
       "temperature",
       "top_k",
-      "top_p"
-    ]
-  },
-  {
-    "id": "liquid/lfm-40b",
-    "canonical_slug": "liquid/lfm-40b",
-    "hugging_face_id": null,
-    "name": "Liquid: LFM 40B MoE",
-    "created": 1727654400,
-    "description": "Liquid's 40.3B Mixture of Experts (MoE) model. Liquid Foundation Models (LFMs) are large neural networks built with computational units rooted in dynamic systems.\n\nLFMs are general-purpose AI models that can be used to model any kind of sequential data, including video, audio, text, time series, and signals.\n\nSee the [launch announcement](https://www.liquid.ai/liquid-foundation-models) for benchmarks and more info.",
-    "context_length": 65536,
-    "architecture": {
-      "modality": "text->text",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "tokenizer": "Other",
-      "instruct_type": "chatml"
-    },
-    "pricing": {
-      "prompt": "0.00000015",
-      "completion": "0.00000015",
-      "request": "0",
-      "image": "0",
-      "audio": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 65536,
-      "max_completion_tokens": 65536,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "supported_parameters": [
-      "frequency_penalty",
-      "logit_bias",
-      "logprobs",
-      "max_tokens",
-      "min_p",
-      "presence_penalty",
-      "repetition_penalty",
-      "response_format",
-      "seed",
-      "stop",
-      "temperature",
-      "top_k",
-      "top_logprobs",
       "top_p"
     ]
   },
@@ -5109,7 +5061,6 @@
       "completion": "0.00000001",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -5156,17 +5107,16 @@
       "instruct_type": "alpaca"
     },
     "pricing": {
-      "prompt": "0.00000075",
-      "completion": "0.00000075",
+      "prompt": "0.000001125",
+      "completion": "0.000001125",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
     "top_provider": {
       "context_length": 8000,
-      "max_completion_tokens": 1000,
+      "max_completion_tokens": 2000,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -5209,7 +5159,6 @@
       "completion": "0.0000004",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -5262,7 +5211,6 @@
       "completion": "0.00000006",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -5313,7 +5261,6 @@
       "completion": "0.000002",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -5363,7 +5310,6 @@
       "completion": "0.0000008",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -5417,7 +5363,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -5463,7 +5408,6 @@
       "completion": "0.00000028",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -5517,7 +5461,6 @@
       "completion": "0.00000002",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -5572,7 +5515,6 @@
       "completion": "0.000000049",
       "request": "0",
       "image": "0.00007948",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -5624,7 +5566,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -5671,7 +5612,6 @@
       "completion": "0.00000001",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -5722,7 +5662,6 @@
       "completion": "0.000000006",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -5776,7 +5715,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -5821,7 +5759,6 @@
       "completion": "0.0000012",
       "request": "0",
       "image": "0.001734",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -5870,7 +5807,6 @@
       "completion": "0.00000012",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -5924,7 +5860,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -5974,7 +5909,6 @@
       "completion": "0.0000006",
       "request": "0",
       "image": "0.0006684",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -6029,7 +5963,6 @@
       "completion": "0.0000003",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -6083,7 +6016,6 @@
       "completion": "0.0000002",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -6130,7 +6062,6 @@
       "completion": "0.00000006",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -6182,7 +6113,6 @@
       "completion": "0.00000018",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -6231,7 +6161,6 @@
       "completion": "0.000000800064",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -6283,7 +6212,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -6335,7 +6263,6 @@
       "completion": "0.000001",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -6377,7 +6304,6 @@
       "completion": "0.0000001",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -6419,7 +6345,6 @@
       "completion": "0.0000001",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -6461,7 +6386,6 @@
       "completion": "0.00000014",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -6514,7 +6438,6 @@
       "completion": "0.0000001",
       "request": "0",
       "image": "0.00017685",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -6562,7 +6485,6 @@
       "completion": "0.00000035",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -6612,7 +6534,6 @@
       "completion": "0.00000048",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -6662,7 +6583,6 @@
       "completion": "0.0000011",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -6702,7 +6622,6 @@
       "completion": "0.00000165",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -6755,7 +6674,6 @@
       "completion": "0.0000009",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -6803,7 +6721,6 @@
       "completion": "0.0000009",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -6851,7 +6768,6 @@
       "completion": "0.000002",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -6899,7 +6815,6 @@
       "completion": "0.00000028",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -6950,7 +6865,6 @@
       "completion": "0.0000000800064",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -7004,7 +6918,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -7056,7 +6969,6 @@
       "completion": "0.000005",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -7106,7 +7018,6 @@
       "completion": "0.000005",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -7156,7 +7067,6 @@
       "completion": "0.0000015",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -7206,7 +7116,6 @@
       "completion": "0.00000004",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -7252,7 +7161,6 @@
       "completion": "0.0000001",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -7300,7 +7208,6 @@
       "completion": "0.000000054",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -7352,7 +7259,6 @@
       "completion": "0.00000019",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -7402,7 +7308,6 @@
       "completion": "0.000000054",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -7454,7 +7359,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -7504,7 +7408,6 @@
       "completion": "0.000006",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -7552,7 +7455,6 @@
       "completion": "0.000006",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -7600,7 +7502,6 @@
       "completion": "0.000006",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -7649,7 +7550,6 @@
       "completion": "0.000002",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -7698,7 +7598,6 @@
       "completion": "0.000002",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -7746,7 +7645,6 @@
       "completion": "0.00000005",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -7800,7 +7698,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -7850,7 +7747,6 @@
       "completion": "0.0000006",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -7898,7 +7794,6 @@
       "completion": "0.0000006",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -7946,7 +7841,6 @@
       "completion": "0.0000000800064",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -8000,7 +7894,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -8047,11 +7940,10 @@
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.000000017992692",
-      "completion": "0.00000007200576",
+      "prompt": "0.00000001999188",
+      "completion": "0.0000000800064",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -8106,7 +7998,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -8161,7 +8052,6 @@
       "completion": "0.0000001",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -8216,7 +8106,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -8269,7 +8158,6 @@
       "completion": "0.00000025",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -8317,7 +8205,6 @@
       "completion": "0.0000009",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -8370,7 +8257,6 @@
       "completion": "0.00000024",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -8422,7 +8308,6 @@
       "completion": "0.0000001",
       "request": "0",
       "image": "0.0001445",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -8477,7 +8362,6 @@
       "completion": "0.000006",
       "request": "0",
       "image": "0.002888",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -8525,7 +8409,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -8577,7 +8460,6 @@
       "completion": "0.00000249",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -8631,7 +8513,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -8684,7 +8565,6 @@
       "completion": "0.000000100008",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -8737,7 +8617,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -8789,7 +8668,6 @@
       "completion": "0.0000019",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -8829,7 +8707,6 @@
       "completion": "0.0000019",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -8869,7 +8746,6 @@
       "completion": "0.000006",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -8912,17 +8788,16 @@
       "instruct_type": "llama3"
     },
     "pricing": {
-      "prompt": "0.0000001",
-      "completion": "0.000000625",
+      "prompt": "0.00000009",
+      "completion": "0.0000006",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
     "top_provider": {
       "context_length": 32768,
-      "max_completion_tokens": 2048,
+      "max_completion_tokens": null,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -8950,7 +8825,7 @@
     "name": "Noromaid 20B",
     "created": 1700956800,
     "description": "A collab between IkariDev and Undi. This merge is suitable for RP, ERP, and general knowledge.\n\n#merge #uncensored",
-    "context_length": 8192,
+    "context_length": 4096,
     "architecture": {
       "modality": "text->text",
       "input_modalities": [
@@ -8963,17 +8838,16 @@
       "instruct_type": "alpaca"
     },
     "pricing": {
-      "prompt": "0.000000625",
-      "completion": "0.000001",
+      "prompt": "0.000001",
+      "completion": "0.00000175",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 8192,
-      "max_completion_tokens": 2048,
+      "context_length": 4096,
+      "max_completion_tokens": null,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -9018,7 +8892,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -9068,7 +8941,6 @@
       "completion": "0.0000003733632",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -9120,7 +8992,6 @@
       "completion": "0.00000004",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -9172,7 +9043,6 @@
       "completion": "0.0000008",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -9223,7 +9093,6 @@
       "completion": "0.00000028",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -9277,7 +9146,6 @@
       "completion": "0.0000006",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -9324,20 +9192,18 @@
       "completion": "0.0000003",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
     "top_provider": {
       "context_length": 131072,
-      "max_completion_tokens": 131072,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
       "logit_bias",
-      "logprobs",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -9349,7 +9215,6 @@
       "tool_choice",
       "tools",
       "top_k",
-      "top_logprobs",
       "top_p"
     ]
   },
@@ -9377,7 +9242,6 @@
       "completion": "0.0000018",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -9427,7 +9291,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -9477,7 +9340,6 @@
       "completion": "0.0000004",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -9526,7 +9388,6 @@
       "completion": "0.000015",
       "request": "0",
       "image": "0.007225",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -9576,7 +9437,6 @@
       "completion": "0.000006",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.000000375"
@@ -9622,7 +9482,6 @@
       "completion": "0.0000015",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -9673,7 +9532,6 @@
       "completion": "0.000002",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -9724,7 +9582,6 @@
       "completion": "0.000004",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -9775,7 +9632,6 @@
       "completion": "0.000002",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -9824,7 +9680,6 @@
       "completion": "0.00006",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -9875,7 +9730,6 @@
       "completion": "0.00006",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -9926,7 +9780,6 @@
       "completion": "0.00003",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -9978,7 +9831,6 @@
       "completion": "0.00003",
       "request": "0",
       "image": "0.01445",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -10029,7 +9881,6 @@
       "completion": "0.00003",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -10082,7 +9933,6 @@
       "completion": "0.000008",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.0000005"
@@ -10137,7 +9987,6 @@
       "completion": "0.0000016",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.0000001"
@@ -10192,7 +10041,6 @@
       "completion": "0.0000004",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.000000025"
@@ -10246,7 +10094,6 @@
       "completion": "0.00001",
       "request": "0",
       "image": "0.003613",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.00000125"
@@ -10301,7 +10148,6 @@
       "completion": "0.000015",
       "request": "0",
       "image": "0.007225",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -10355,7 +10201,6 @@
       "completion": "0.00001",
       "request": "0",
       "image": "0.003613",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.00000125"
@@ -10410,7 +10255,6 @@
       "completion": "0.00001",
       "request": "0",
       "image": "0.003613",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.00000125"
@@ -10440,6 +10284,58 @@
     ]
   },
   {
+    "id": "openai/gpt-4o-audio-preview",
+    "canonical_slug": "openai/gpt-4o-audio-preview",
+    "hugging_face_id": "",
+    "name": "OpenAI: GPT-4o Audio",
+    "created": 1755233061,
+    "description": "The gpt-4o-audio-preview model adds support for audio inputs as prompts. This enhancement allows the model to detect nuances within audio recordings and add depth to generated user experiences. Audio outputs are currently not supported. Audio tokens are priced at $40 per million input audio tokens.",
+    "context_length": 128000,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "audio",
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "GPT",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000025",
+      "completion": "0.00001",
+      "request": "0",
+      "image": "0",
+      "audio": "0.00004",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": 16384,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "presence_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_logprobs",
+      "top_p"
+    ]
+  },
+  {
     "id": "openai/gpt-4o-mini",
     "canonical_slug": "openai/gpt-4o-mini",
     "hugging_face_id": null,
@@ -10465,7 +10361,6 @@
       "completion": "0.0000006",
       "request": "0",
       "image": "0.000217",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.000000075"
@@ -10520,7 +10415,6 @@
       "completion": "0.0000006",
       "request": "0",
       "image": "0.007225",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.000000075"
@@ -10573,7 +10467,6 @@
       "completion": "0.0000006",
       "request": "0.0275",
       "image": "0.000217",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -10614,7 +10507,6 @@
       "completion": "0.00001",
       "request": "0.035",
       "image": "0.003613",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -10657,7 +10549,6 @@
       "completion": "0.000018",
       "request": "0",
       "image": "0.007225",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -10691,7 +10582,7 @@
     "hugging_face_id": "",
     "name": "OpenAI: GPT-5",
     "created": 1754587413,
-    "description": "GPT-5 is OpenAI’s most advanced model, offering major improvements in reasoning, code quality, and user experience. It is optimized for complex tasks that require step-by-step reasoning, instruction following, and accuracy in high-stakes use cases. It supports test-time routing features and advanced prompt understanding, including user-specified intent like \"think hard about this.\" Improvements include reductions in hallucination, sycophancy, and better performance in coding, writing, and health-related tasks.\n\nNote that BYOK is required for this model. Set up here: https://openrouter.ai/settings/integrations",
+    "description": "GPT-5 is OpenAI’s most advanced model, offering major improvements in reasoning, code quality, and user experience. It is optimized for complex tasks that require step-by-step reasoning, instruction following, and accuracy in high-stakes use cases. It supports test-time routing features and advanced prompt understanding, including user-specified intent like \"think hard about this.\" Improvements include reductions in hallucination, sycophancy, and better performance in coding, writing, and health-related tasks.",
     "context_length": 400000,
     "architecture": {
       "modality": "text+image->text",
@@ -10711,7 +10602,6 @@
       "completion": "0.00001",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.000000125"
@@ -10759,7 +10649,6 @@
       "completion": "0.00001",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.000000125"
@@ -10805,7 +10694,6 @@
       "completion": "0.000002",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.000000025"
@@ -10853,7 +10741,6 @@
       "completion": "0.0000004",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.000000005"
@@ -10882,7 +10769,7 @@
     "name": "OpenAI: gpt-oss-120b",
     "created": 1754414231,
     "description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. It activates 5.1B parameters per forward pass and is optimized to run on a single H100 GPU with native MXFP4 quantization. The model supports configurable reasoning depth, full chain-of-thought access, and native tool use, including function calling, browsing, and structured output generation.",
-    "context_length": 131072,
+    "context_length": 131000,
     "architecture": {
       "modality": "text->text",
       "input_modalities": [
@@ -10895,17 +10782,16 @@
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.00000007256312",
-      "completion": "0.0000002903936",
+      "prompt": "0.000000072",
+      "completion": "0.00000028",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": null,
+      "context_length": 131000,
+      "max_completion_tokens": 131000,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -10938,7 +10824,7 @@
     "name": "OpenAI: gpt-oss-20b",
     "created": 1754414229,
     "description": "gpt-oss-20b is an open-weight 21B parameter model released by OpenAI under the Apache 2.0 license. It uses a Mixture-of-Experts (MoE) architecture with 3.6B active parameters per forward pass, optimized for lower-latency inference and deployability on consumer or single-GPU hardware. The model is trained in OpenAI’s Harmony response format and supports reasoning level configuration, fine-tuning, and agentic capabilities including function calling, tool use, and structured outputs.",
-    "context_length": 131072,
+    "context_length": 131000,
     "architecture": {
       "modality": "text->text",
       "input_modalities": [
@@ -10952,16 +10838,15 @@
     },
     "pricing": {
       "prompt": "0.00000004",
-      "completion": "0.00000016",
+      "completion": "0.00000015",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": null,
+      "context_length": 131000,
+      "max_completion_tokens": 131000,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -11011,7 +10896,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -11056,7 +10940,6 @@
       "completion": "0.00006",
       "request": "0",
       "image": "0.021675",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.0000075"
@@ -11100,7 +10983,6 @@
       "completion": "0.0000044",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.00000055"
@@ -11140,7 +11022,6 @@
       "completion": "0.0000044",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.00000055"
@@ -11181,7 +11062,6 @@
       "completion": "0.0006",
       "request": "0",
       "image": "0.21675",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -11226,7 +11106,6 @@
       "completion": "0.000008",
       "request": "0",
       "image": "0.00153",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.0000005"
@@ -11272,7 +11151,6 @@
       "completion": "0.0000044",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.00000055"
@@ -11316,7 +11194,6 @@
       "completion": "0.0000044",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.00000055"
@@ -11362,7 +11239,6 @@
       "completion": "0.00008",
       "request": "0",
       "image": "0.0153",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -11408,7 +11284,6 @@
       "completion": "0.0000044",
       "request": "0",
       "image": "0.0008415",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.000000275"
@@ -11456,7 +11331,6 @@
       "completion": "0.0000044",
       "request": "0",
       "image": "0.0008415",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.000000275"
@@ -11503,7 +11377,6 @@
       "completion": "0.0000004",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -11574,7 +11447,6 @@
       "completion": "0.000008",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -11624,7 +11496,6 @@
       "completion": "0.000001",
       "request": "0.005",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -11668,7 +11539,6 @@
       "completion": "0.000008",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0.005",
       "internal_reasoning": "0.000003"
     },
@@ -11715,7 +11585,6 @@
       "completion": "0.000015",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0.005",
       "internal_reasoning": "0"
     },
@@ -11759,7 +11628,6 @@
       "completion": "0.000005",
       "request": "0.005",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -11806,7 +11674,6 @@
       "completion": "0.000008",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0.005",
       "internal_reasoning": "0"
     },
@@ -11852,7 +11719,6 @@
       "completion": "0.0000011",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -11899,7 +11765,6 @@
       "completion": "0.0000009",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -11946,7 +11811,6 @@
       "completion": "0.000000266688",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -11999,7 +11863,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -12049,7 +11912,6 @@
       "completion": "0.0000001",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -12099,7 +11961,6 @@
       "completion": "0.000000200016",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -12150,7 +12011,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -12201,7 +12061,6 @@
       "completion": "0.0000002",
       "request": "0",
       "image": "0.0001445",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -12253,7 +12112,6 @@
       "completion": "0.0000064",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.00000064"
@@ -12299,7 +12157,6 @@
       "completion": "0.0000012",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.00000016"
@@ -12345,7 +12202,6 @@
       "completion": "0.0000002",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.00000002"
@@ -12392,7 +12248,6 @@
       "completion": "0.0000032",
       "request": "0",
       "image": "0.001024",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -12436,7 +12291,6 @@
       "completion": "0.00000063",
       "request": "0",
       "image": "0.0002688",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -12480,7 +12334,6 @@
       "completion": "0.0000000800064",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -12533,7 +12386,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -12585,7 +12437,6 @@
       "completion": "0.000000400032",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -12636,7 +12487,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -12683,7 +12533,6 @@
       "completion": "0.00000024",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -12739,7 +12588,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -12791,7 +12639,6 @@
       "completion": "0.0000006",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -12847,7 +12694,6 @@
       "completion": "0.00000031202496",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -12901,7 +12747,6 @@
       "completion": "0.00000031202496",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -12956,7 +12801,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -13012,7 +12856,6 @@
       "completion": "0.0000000800064",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -13068,7 +12911,6 @@
       "completion": "0.0000008",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -13111,7 +12953,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -13163,7 +13004,6 @@
       "completion": "0.00000007200576",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -13219,7 +13059,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -13269,7 +13108,6 @@
       "completion": "0.000000138",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -13319,7 +13157,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -13371,7 +13208,6 @@
       "completion": "0.0000008",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -13425,7 +13261,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -13477,7 +13312,6 @@
       "completion": "0.00000015",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -13531,7 +13365,6 @@
       "completion": "0.0000002",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -13581,7 +13414,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -13627,7 +13459,6 @@
       "completion": "0.0000045",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -13675,7 +13506,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -13727,7 +13557,6 @@
       "completion": "0.00000148",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -13775,7 +13604,6 @@
       "completion": "0.00000005",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -13824,7 +13652,6 @@
       "completion": "0.00000075",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -13874,7 +13701,6 @@
       "completion": "0.00000075",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -13924,7 +13750,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -13974,7 +13799,6 @@
       "completion": "0.00000088",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -14021,7 +13845,6 @@
       "completion": "0.0000000800064",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -14071,7 +13894,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -14121,7 +13943,6 @@
       "completion": "0.0000008",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -14169,7 +13990,6 @@
       "completion": "0.0000034",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -14214,7 +14034,6 @@
       "completion": "0.00000003",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -14266,7 +14085,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -14318,7 +14136,6 @@
       "completion": "0.0000007",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -14367,7 +14184,6 @@
       "completion": "0.000001",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -14397,7 +14213,7 @@
     "name": "TheDrummer: Rocinante 12B",
     "created": 1727654400,
     "description": "Rocinante 12B is designed for engaging storytelling and rich prose.\n\nEarly testers have reported:\n- Expanded vocabulary with unique and expressive word choices\n- Enhanced creativity for vivid narratives\n- Adventure-filled and captivating stories",
-    "context_length": 8192,
+    "context_length": 32768,
     "architecture": {
       "modality": "text->text",
       "input_modalities": [
@@ -14410,17 +14226,16 @@
       "instruct_type": "chatml"
     },
     "pricing": {
-      "prompt": "0.00000019",
-      "completion": "0.00000045",
+      "prompt": "0.00000017",
+      "completion": "0.00000043",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 8192,
-      "max_completion_tokens": 8192,
+      "context_length": 32768,
+      "max_completion_tokens": null,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -14467,7 +14282,6 @@
       "completion": "0.000000192608",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -14519,7 +14333,6 @@
       "completion": "0.0000004",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -14568,11 +14381,10 @@
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.00000024",
-      "completion": "0.00000024",
+      "prompt": "0.00000055",
+      "completion": "0.00000166",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -14621,7 +14433,6 @@
       "completion": "0.000000138",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -14671,7 +14482,6 @@
       "completion": "0.0000000800064",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -14719,11 +14529,10 @@
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.00000017992692",
-      "completion": "0.0000007200576",
+      "prompt": "0.0000001999188",
+      "completion": "0.000000800064",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -14775,7 +14584,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -14827,7 +14635,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -14875,17 +14682,16 @@
       "instruct_type": "alpaca"
     },
     "pricing": {
-      "prompt": "0.0000005",
-      "completion": "0.00000075",
+      "prompt": "0.00000045",
+      "completion": "0.00000065",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
     "top_provider": {
       "context_length": 6144,
-      "max_completion_tokens": 1024,
+      "max_completion_tokens": null,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -14930,7 +14736,6 @@
       "completion": "0.00001",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -14980,7 +14785,6 @@
       "completion": "0.00001",
       "request": "0",
       "image": "0.0036",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -15027,7 +14831,6 @@
       "completion": "0.000015",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.00000075"
@@ -15078,7 +14881,6 @@
       "completion": "0.000015",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.00000075"
@@ -15128,7 +14930,6 @@
       "completion": "0.0000005",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.000000075"
@@ -15179,7 +14980,6 @@
       "completion": "0.0000005",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.000000075"
@@ -15230,7 +15030,6 @@
       "completion": "0.000015",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.00000075"
@@ -15281,7 +15080,6 @@
       "completion": "0.000015",
       "request": "0",
       "image": "0.009",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -15328,7 +15126,6 @@
       "completion": "0.0000001",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -15353,7 +15150,7 @@
     "name": "Z.AI: GLM 4.5",
     "created": 1753471347,
     "description": "GLM-4.5 is our latest flagship foundation model, purpose-built for agent-based applications. It leverages a Mixture-of-Experts (MoE) architecture and supports a context length of up to 128k tokens. GLM-4.5 delivers significantly enhanced capabilities in reasoning, code generation, and agent alignment. It supports a hybrid inference mode with two options, a \"thinking mode\" designed for complex reasoning and tool use, and a \"non-thinking mode\" optimized for instant responses. Users can control the reasoning behaviour with the `reasoning` `enabled` boolean. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)",
-    "context_length": 98304,
+    "context_length": 131072,
     "architecture": {
       "modality": "text->text",
       "input_modalities": [
@@ -15370,12 +15167,11 @@
       "completion": "0.000000800064",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 98304,
+      "context_length": 131072,
       "max_completion_tokens": null,
       "is_moderated": false
     },
@@ -15425,7 +15221,6 @@
       "completion": "0.0000011",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0",
       "input_cache_read": "0.00000003"
@@ -15437,21 +15232,12 @@
     },
     "per_request_limits": null,
     "supported_parameters": [
-      "frequency_penalty",
       "include_reasoning",
       "max_tokens",
-      "min_p",
-      "presence_penalty",
       "reasoning",
-      "repetition_penalty",
-      "response_format",
-      "seed",
-      "stop",
-      "structured_outputs",
       "temperature",
       "tool_choice",
       "tools",
-      "top_k",
       "top_p"
     ]
   },
@@ -15479,7 +15265,6 @@
       "completion": "0",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -15531,10 +15316,9 @@
     },
     "pricing": {
       "prompt": "0.0000005",
-      "completion": "0.0000017",
+      "completion": "0.0000018",
       "request": "0",
       "image": "0",
-      "audio": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
@@ -15553,7 +15337,6 @@
       "presence_penalty",
       "reasoning",
       "repetition_penalty",
-      "response_format",
       "seed",
       "stop",
       "temperature",
