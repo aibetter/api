@@ -535,8 +535,8 @@
       "instruct_type": "airoboros"
     },
     "pricing": {
-      "prompt": "0.000004",
-      "completion": "0.0000055",
+      "prompt": "0.000006",
+      "completion": "0.000008",
       "request": "0",
       "image": "0",
       "web_search": "0",
@@ -544,7 +544,7 @@
     },
     "top_provider": {
       "context_length": 6144,
-      "max_completion_tokens": 512,
+      "max_completion_tokens": 1024,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -559,7 +559,6 @@
       "response_format",
       "seed",
       "stop",
-      "structured_outputs",
       "temperature",
       "top_a",
       "top_k",
@@ -1038,54 +1037,6 @@
     "default_parameters": {}
   },
   {
-    "id": "anthropic/claude-3.5-sonnet-20240620",
-    "canonical_slug": "anthropic/claude-3.5-sonnet-20240620",
-    "hugging_face_id": null,
-    "name": "Anthropic: Claude 3.5 Sonnet (2024-06-20)",
-    "created": 1718841600,
-    "description": "Claude 3.5 Sonnet delivers better-than-Opus capabilities, faster-than-Sonnet speeds, at the same Sonnet prices. Sonnet is particularly good at:\n\n- Coding: Autonomously writes, edits, and runs code with reasoning and troubleshooting\n- Data science: Augments human data science expertise; navigates unstructured data while using multiple tools for insights\n- Visual processing: excelling at interpreting charts, graphs, and images, accurately transcribing text to derive insights beyond just the text alone\n- Agentic tasks: exceptional tool use, making it great at agentic tasks (i.e. complex, multi-step problem solving tasks that require engaging with other systems)\n\nFor the latest version (2024-10-23), check out [Claude 3.5 Sonnet](/anthropic/claude-3.5-sonnet).\n\n#multimodal",
-    "context_length": 200000,
-    "architecture": {
-      "modality": "text+image->text",
-      "input_modalities": [
-        "text",
-        "image",
-        "file"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "tokenizer": "Claude",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.000003",
-      "completion": "0.000015",
-      "request": "0",
-      "image": "0.0048",
-      "web_search": "0",
-      "internal_reasoning": "0",
-      "input_cache_read": "0.0000003",
-      "input_cache_write": "0.00000375"
-    },
-    "top_provider": {
-      "context_length": 200000,
-      "max_completion_tokens": 8192,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "supported_parameters": [
-      "max_tokens",
-      "stop",
-      "temperature",
-      "tool_choice",
-      "tools",
-      "top_k",
-      "top_p"
-    ],
-    "default_parameters": {}
-  },
-  {
     "id": "anthropic/claude-3.7-sonnet",
     "canonical_slug": "anthropic/claude-3-7-sonnet-20250219",
     "hugging_face_id": "",
@@ -1332,7 +1283,9 @@
       "include_reasoning",
       "max_tokens",
       "reasoning",
+      "response_format",
       "stop",
+      "structured_outputs",
       "temperature",
       "tool_choice",
       "tools",
@@ -1436,7 +1389,9 @@
       "include_reasoning",
       "max_tokens",
       "reasoning",
+      "response_format",
       "stop",
+      "structured_outputs",
       "temperature",
       "tool_choice",
       "tools",
@@ -3600,7 +3555,8 @@
         "text",
         "image",
         "file",
-        "audio"
+        "audio",
+        "video"
       ],
       "output_modalities": [
         "text"
@@ -3636,7 +3592,11 @@
       "tools",
       "top_p"
     ],
-    "default_parameters": {}
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "frequency_penalty": null
+    }
   },
   {
     "id": "google/gemini-2.0-flash-exp:free",
@@ -3698,7 +3658,8 @@
         "text",
         "image",
         "file",
-        "audio"
+        "audio",
+        "video"
       ],
       "output_modalities": [
         "text"
@@ -3731,7 +3692,11 @@
       "tools",
       "top_p"
     ],
-    "default_parameters": {}
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "frequency_penalty": null
+    }
   },
   {
     "id": "google/gemini-2.5-flash",
@@ -5188,6 +5153,60 @@
     "default_parameters": {}
   },
   {
+    "id": "kwaipilot/kat-coder-pro:free",
+    "canonical_slug": "kwaipilot/kat-coder-pro-v1",
+    "hugging_face_id": "",
+    "name": "Kwaipilot: KAT-Coder-Pro V1 (free)",
+    "created": 1762745912,
+    "description": "KAT-Coder-Pro V1 is KwaiKAT's most advanced agentic coding model in the KAT-Coder series. Designed specifically for agentic coding tasks, it excels in real-world software engineering scenarios, achieving 73.4% solve rate on the SWE-Bench Verified benchmark. \n\nThe model has been optimized for tool-use capability, multi-turn interaction, instruction following, generalization, and comprehensive capabilities through a multi-stage training process, including mid-training, supervised fine-tuning (SFT), reinforcement fine-tuning (RFT), and scalable agentic RL.",
+    "context_length": 256000,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "request": "0",
+      "image": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 256000,
+      "max_completion_tokens": 32000,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "max_tokens",
+      "presence_penalty",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "frequency_penalty": null
+    }
+  },
+  {
     "id": "liquid/lfm-2.2-6b",
     "canonical_slug": "liquid/lfm-2.2-6b",
     "hugging_face_id": "LiquidAI/LFM2-2.6B",
@@ -5585,7 +5604,7 @@
     "name": "Meta: Llama 3.1 405B Instruct",
     "created": 1721692800,
     "description": "The highly anticipated 400B class of Llama3 is here! Clocking in at 128k context with impressive eval scores, the Meta AI team continues to push the frontier of open-source LLMs.\n\nMeta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 405B instruct-tuned version is optimized for high quality dialogue usecases.\n\nIt has demonstrated strong performance compared to leading closed-source models including GPT-4o and Claude 3.5 Sonnet in evaluations.\n\nTo read more about the model release, [click here](https://ai.meta.com/blog/meta-llama-3-1/). Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.meta.com/llama3/use-policy/).",
-    "context_length": 32768,
+    "context_length": 130815,
     "architecture": {
       "modality": "text->text",
       "input_modalities": [
@@ -5598,16 +5617,16 @@
       "instruct_type": "llama3"
     },
     "pricing": {
-      "prompt": "0.0000008",
-      "completion": "0.0000008",
+      "prompt": "0.0000035",
+      "completion": "0.0000035",
       "request": "0",
       "image": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 32768,
-      "max_completion_tokens": 16384,
+      "context_length": 130815,
+      "max_completion_tokens": null,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -5792,7 +5811,7 @@
     "name": "Meta: Llama 3.2 1B Instruct",
     "created": 1727222400,
     "description": "Llama 3.2 1B is a 1-billion-parameter language model focused on efficiently performing natural language tasks, such as summarization, dialogue, and multilingual text analysis. Its smaller size allows it to operate efficiently in low-resource environments while maintaining strong task performance.\n\nSupporting eight core languages and fine-tunable for more, Llama 1.3B is ideal for businesses or developers seeking lightweight yet powerful AI solutions that can operate in diverse multilingual settings without the high computational demand of larger models.\n\nClick here for the [original model card](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md).\n\nUsage of this model is subject to [Meta's Acceptable Use Policy](https://www.llama.com/llama3/use-policy/).",
-    "context_length": 131072,
+    "context_length": 60000,
     "architecture": {
       "modality": "text->text",
       "input_modalities": [
@@ -5805,28 +5824,25 @@
       "instruct_type": "llama3"
     },
     "pricing": {
-      "prompt": "0.000000005",
-      "completion": "0.00000001",
+      "prompt": "0.000000027",
+      "completion": "0.0000002",
       "request": "0",
       "image": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": 16384,
+      "context_length": 60000,
+      "max_completion_tokens": null,
       "is_moderated": false
     },
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
       "max_tokens",
-      "min_p",
       "presence_penalty",
       "repetition_penalty",
-      "response_format",
       "seed",
-      "stop",
       "temperature",
       "top_k",
       "top_p"
@@ -6081,52 +6097,6 @@
     "default_parameters": {}
   },
   {
-    "id": "meta-llama/llama-3.3-8b-instruct:free",
-    "canonical_slug": "meta-llama/llama-3.3-8b-instruct",
-    "hugging_face_id": "",
-    "name": "Meta: Llama 3.3 8B Instruct (free)",
-    "created": 1747230154,
-    "description": "A lightweight and ultra-fast variant of Llama 3.3 70B, for use when quick response times are needed most.",
-    "context_length": 128000,
-    "architecture": {
-      "modality": "text->text",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "tokenizer": "Llama3",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0",
-      "completion": "0",
-      "request": "0",
-      "image": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 128000,
-      "max_completion_tokens": 4028,
-      "is_moderated": true
-    },
-    "per_request_limits": null,
-    "supported_parameters": [
-      "max_tokens",
-      "repetition_penalty",
-      "response_format",
-      "structured_outputs",
-      "temperature",
-      "tool_choice",
-      "tools",
-      "top_k",
-      "top_p"
-    ],
-    "default_parameters": {}
-  },
-  {
     "id": "meta-llama/llama-4-maverick",
     "canonical_slug": "meta-llama/llama-4-maverick-17b-128e-instruct",
     "hugging_face_id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
@@ -6180,53 +6150,6 @@
     "default_parameters": {}
   },
   {
-    "id": "meta-llama/llama-4-maverick:free",
-    "canonical_slug": "meta-llama/llama-4-maverick-17b-128e-instruct",
-    "hugging_face_id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
-    "name": "Meta: Llama 4 Maverick (free)",
-    "created": 1743881822,
-    "description": "Llama 4 Maverick 17B Instruct (128E) is a high-capacity multimodal language model from Meta, built on a mixture-of-experts (MoE) architecture with 128 experts and 17 billion active parameters per forward pass (400B total). It supports multilingual text and image input, and produces multilingual text and code output across 12 supported languages. Optimized for vision-language tasks, Maverick is instruction-tuned for assistant-like behavior, image reasoning, and general-purpose multimodal interaction.\n\nMaverick features early fusion for native multimodality and a 1 million token context window. It was trained on a curated mixture of public, licensed, and Meta-platform data, covering ~22 trillion tokens, with a knowledge cutoff in August 2024. Released on April 5, 2025 under the Llama 4 Community License, Maverick is suited for research and commercial applications requiring advanced multimodal understanding and high model throughput.",
-    "context_length": 128000,
-    "architecture": {
-      "modality": "text+image->text",
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "tokenizer": "Llama4",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0",
-      "completion": "0",
-      "request": "0",
-      "image": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 128000,
-      "max_completion_tokens": 4028,
-      "is_moderated": true
-    },
-    "per_request_limits": null,
-    "supported_parameters": [
-      "max_tokens",
-      "repetition_penalty",
-      "response_format",
-      "structured_outputs",
-      "temperature",
-      "tool_choice",
-      "tools",
-      "top_k",
-      "top_p"
-    ],
-    "default_parameters": {}
-  },
-  {
     "id": "meta-llama/llama-4-scout",
     "canonical_slug": "meta-llama/llama-4-scout-17b-16e-instruct",
     "hugging_face_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
@@ -6270,53 +6193,6 @@
       "response_format",
       "seed",
       "stop",
-      "structured_outputs",
-      "temperature",
-      "tool_choice",
-      "tools",
-      "top_k",
-      "top_p"
-    ],
-    "default_parameters": {}
-  },
-  {
-    "id": "meta-llama/llama-4-scout:free",
-    "canonical_slug": "meta-llama/llama-4-scout-17b-16e-instruct",
-    "hugging_face_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
-    "name": "Meta: Llama 4 Scout (free)",
-    "created": 1743881519,
-    "description": "Llama 4 Scout 17B Instruct (16E) is a mixture-of-experts (MoE) language model developed by Meta, activating 17 billion parameters out of a total of 109B. It supports native multimodal input (text and image) and multilingual output (text and code) across 12 supported languages. Designed for assistant-style interaction and visual reasoning, Scout uses 16 experts per forward pass and features a context length of 10 million tokens, with a training corpus of ~40 trillion tokens.\n\nBuilt for high efficiency and local or commercial deployment, Llama 4 Scout incorporates early fusion for seamless modality integration. It is instruction-tuned for use in multilingual chat, captioning, and image understanding tasks. Released under the Llama 4 Community License, it was last trained on data up to August 2024 and launched publicly on April 5, 2025.",
-    "context_length": 128000,
-    "architecture": {
-      "modality": "text+image->text",
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "tokenizer": "Llama4",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0",
-      "completion": "0",
-      "request": "0",
-      "image": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 128000,
-      "max_completion_tokens": 4028,
-      "is_moderated": true
-    },
-    "per_request_limits": null,
-    "supported_parameters": [
-      "max_tokens",
-      "repetition_penalty",
-      "response_format",
       "structured_outputs",
       "temperature",
       "tool_choice",
@@ -7022,6 +6898,7 @@
       "logit_bias",
       "logprobs",
       "max_tokens",
+      "min_p",
       "presence_penalty",
       "reasoning",
       "repetition_penalty",
@@ -7043,64 +6920,13 @@
     }
   },
   {
-    "id": "minimax/minimax-m2:free",
-    "canonical_slug": "minimax/minimax-m2",
-    "hugging_face_id": "MiniMaxAI/MiniMax-M2",
-    "name": "MiniMax: MiniMax M2 (free)",
-    "created": 1761252093,
-    "description": "MiniMax-M2 is a compact, high-efficiency large language model optimized for end-to-end coding and agentic workflows. With 10 billion activated parameters (230 billion total), it delivers near-frontier intelligence across general reasoning, tool use, and multi-step task execution while maintaining low latency and deployment efficiency.\n\nThe model excels in code generation, multi-file editing, compile-run-fix loops, and test-validated repair, showing strong results on SWE-Bench Verified, Multi-SWE-Bench, and Terminal-Bench. It also performs competitively in agentic evaluations such as BrowseComp and GAIA, effectively handling long-horizon planning, retrieval, and recovery from execution errors.\n\nBenchmarked by [Artificial Analysis](https://artificialanalysis.ai/models/minimax-m2), MiniMax-M2 ranks among the top open-source models for composite intelligence, spanning mathematics, science, and instruction-following. Its small activation footprint enables fast inference, high concurrency, and improved unit economics, making it well-suited for large-scale agents, developer assistants, and reasoning-driven applications that require responsiveness and cost efficiency.\n\nTo avoid degrading this model's performance, MiniMax highly recommends preserving reasoning between turns. Learn more about using reasoning_details to pass back reasoning in our [docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#preserving-reasoning-blocks).",
-    "context_length": 196608,
-    "architecture": {
-      "modality": "text->text",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "tokenizer": "Other",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0",
-      "completion": "0",
-      "request": "0",
-      "image": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 196608,
-      "max_completion_tokens": 118000,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "supported_parameters": [
-      "include_reasoning",
-      "max_tokens",
-      "reasoning",
-      "response_format",
-      "seed",
-      "structured_outputs",
-      "temperature",
-      "tool_choice",
-      "tools",
-      "top_p"
-    ],
-    "default_parameters": {
-      "temperature": 1,
-      "top_p": 0.95,
-      "frequency_penalty": null
-    }
-  },
-  {
     "id": "mistralai/codestral-2501",
     "canonical_slug": "mistralai/codestral-2501",
     "hugging_face_id": "",
     "name": "Mistral: Codestral 2501",
     "created": 1736895522,
     "description": "[Mistral](/mistralai)'s cutting-edge language model for coding. Codestral specializes in low-latency, high-frequency tasks such as fill-in-the-middle (FIM), code correction and test generation. \n\nLearn more on their blog post: https://mistral.ai/news/codestral-2501/",
-    "context_length": 262144,
+    "context_length": 256000,
     "architecture": {
       "modality": "text->text",
       "input_modalities": [
@@ -7121,7 +6947,7 @@
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 262144,
+      "context_length": 256000,
       "max_completion_tokens": null,
       "is_moderated": false
     },
@@ -7779,8 +7605,8 @@
       "instruct_type": "mistral"
     },
     "pricing": {
-      "prompt": "0.000000028",
-      "completion": "0.000000054",
+      "prompt": "0.0000002",
+      "completion": "0.0000002",
       "request": "0",
       "image": "0",
       "web_search": "0",
@@ -7788,7 +7614,7 @@
     },
     "top_provider": {
       "context_length": 32768,
-      "max_completion_tokens": 16384,
+      "max_completion_tokens": 4096,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -7799,12 +7625,8 @@
       "min_p",
       "presence_penalty",
       "repetition_penalty",
-      "response_format",
-      "seed",
       "stop",
       "temperature",
-      "tool_choice",
-      "tools",
       "top_k",
       "top_p"
     ],
@@ -8426,7 +8248,7 @@
     "name": "Mistral: Mistral Small 3.1 24B",
     "created": 1742238937,
     "description": "Mistral Small 3.1 24B Instruct is an upgraded variant of Mistral Small 3 (2501), featuring 24 billion parameters with advanced multimodal capabilities. It provides state-of-the-art performance in text-based reasoning and vision tasks, including image analysis, programming, mathematical reasoning, and multilingual support across dozens of languages. Equipped with an extensive 128k token context window and optimized for efficient local inference, it supports use cases such as conversational agents, function calling, long-document comprehension, and privacy-sensitive deployments. The updated version is [Mistral Small 3.2](mistralai/mistral-small-3.2-24b-instruct)",
-    "context_length": 128000,
+    "context_length": 131072,
     "architecture": {
       "modality": "text+image->text",
       "input_modalities": [
@@ -8441,22 +8263,21 @@
     },
     "pricing": {
       "prompt": "0.00000005",
-      "completion": "0.0000001",
+      "completion": "0.00000022",
       "request": "0",
       "image": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 128000,
-      "max_completion_tokens": null,
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
       "is_moderated": false
     },
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
       "max_tokens",
-      "min_p",
       "presence_penalty",
       "repetition_penalty",
       "response_format",
@@ -9165,17 +8986,16 @@
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.0000006",
-      "completion": "0.0000025",
+      "prompt": "0.00000055",
+      "completion": "0.00000225",
       "request": "0",
       "image": "0",
       "web_search": "0",
-      "internal_reasoning": "0",
-      "input_cache_read": "0.00000015"
+      "internal_reasoning": "0"
     },
     "top_provider": {
       "context_length": 262144,
-      "max_completion_tokens": 262144,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -9556,7 +9376,7 @@
     "name": "NousResearch: Hermes 2 Pro - Llama-3 8B",
     "created": 1716768000,
     "description": "Hermes 2 Pro is an upgraded, retrained version of Nous Hermes 2, consisting of an updated and cleaned version of the OpenHermes 2.5 Dataset, as well as a newly introduced Function Calling and JSON Mode dataset developed in-house.",
-    "context_length": 32768,
+    "context_length": 8192,
     "architecture": {
       "modality": "text->text",
       "input_modalities": [
@@ -9577,8 +9397,8 @@
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 32768,
-      "max_completion_tokens": null,
+      "context_length": 8192,
+      "max_completion_tokens": 2048,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -9865,8 +9685,8 @@
       "instruct_type": "llama3"
     },
     "pricing": {
-      "prompt": "0.0000006",
-      "completion": "0.0000006",
+      "prompt": "0.0000012",
+      "completion": "0.0000012",
       "request": "0",
       "image": "0",
       "web_search": "0",
@@ -10007,7 +9827,8 @@
       "modality": "text+image->text",
       "input_modalities": [
         "image",
-        "text"
+        "text",
+        "video"
       ],
       "output_modalities": [
         "text"
@@ -10062,7 +9883,8 @@
       "modality": "text+image->text",
       "input_modalities": [
         "image",
-        "text"
+        "text",
+        "video"
       ],
       "output_modalities": [
         "text"
@@ -11820,6 +11642,232 @@
     }
   },
   {
+    "id": "openai/gpt-5.1",
+    "canonical_slug": "openai/gpt-5.1-20251113",
+    "hugging_face_id": "",
+    "name": "OpenAI: GPT-5.1",
+    "created": 1763060305,
+    "description": "GPT-5.1 is the latest frontier-grade model in the GPT-5 series, offering stronger general-purpose reasoning, improved instruction adherence, and a more natural conversational style compared to GPT-5. It uses adaptive reasoning to allocate computation dynamically, responding quickly to simple queries while spending more depth on complex tasks. The model produces clearer, more grounded explanations with reduced jargon, making it easier to follow even on technical or multi-step problems.\n\nBuilt for broad task coverage, GPT-5.1 delivers consistent gains across math, coding, and structured analysis workloads, with more coherent long-form answers and improved tool-use reliability. It also features refined conversational alignment, enabling warmer, more intuitive responses without compromising precision. GPT-5.1 serves as the primary full-capability successor to GPT-5",
+    "context_length": 400000,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "GPT",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000125",
+      "completion": "0.00001",
+      "request": "0",
+      "image": "0",
+      "web_search": "0.01",
+      "internal_reasoning": "0",
+      "input_cache_read": "0.000000125"
+    },
+    "top_provider": {
+      "context_length": 400000,
+      "max_completion_tokens": 128000,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "tool_choice",
+      "tools",
+      "top_logprobs"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "frequency_penalty": null
+    }
+  },
+  {
+    "id": "openai/gpt-5.1-chat",
+    "canonical_slug": "openai/gpt-5.1-chat-20251113",
+    "hugging_face_id": "",
+    "name": "OpenAI: GPT-5.1 Chat",
+    "created": 1763060302,
+    "description": "GPT-5.1 Chat (AKA Instant is the fast, lightweight member of the 5.1 family, optimized for low-latency chat while retaining strong general intelligence. It uses adaptive reasoning to selectively “think” on harder queries, improving accuracy on math, coding, and multi-step tasks without slowing down typical conversations. The model is warmer and more conversational by default, with better instruction following and more stable short-form reasoning. GPT-5.1 Chat is designed for high-throughput, interactive workloads where responsiveness and consistency matter more than deep deliberation.\n",
+    "context_length": 128000,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "GPT",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000125",
+      "completion": "0.00001",
+      "request": "0",
+      "image": "0",
+      "web_search": "0.01",
+      "internal_reasoning": "0",
+      "input_cache_read": "0.000000125"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": 16384,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "presence_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "top_logprobs"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "frequency_penalty": null
+    }
+  },
+  {
+    "id": "openai/gpt-5.1-codex",
+    "canonical_slug": "openai/gpt-5.1-codex-20251113",
+    "hugging_face_id": "",
+    "name": "OpenAI: GPT-5.1-Codex",
+    "created": 1763060298,
+    "description": "GPT-5.1-Codex is a specialized version of GPT-5.1 optimized for software engineering and coding workflows. It is designed for both interactive development sessions and long, independent execution of complex engineering tasks. The model supports building projects from scratch, feature development, debugging, large-scale refactoring, and code review. Compared to GPT-5.1, Codex is more steerable, adheres closely to developer instructions, and produces cleaner, higher-quality code outputs. Reasoning effort can be adjusted with the `reasoning.effort` parameter. Read the [docs here](https://openrouter.ai/docs/use-cases/reasoning-tokens#reasoning-effort-level)\n\nCodex integrates into developer environments including the CLI, IDE extensions, GitHub, and cloud tasks. It adapts reasoning effort dynamically—providing fast responses for small tasks while sustaining extended multi-hour runs for large projects. The model is trained to perform structured code reviews, catching critical flaws by reasoning over dependencies and validating behavior against tests. It also supports multimodal inputs such as images or screenshots for UI development and integrates tool use for search, dependency installation, and environment setup. Codex is intended specifically for agentic coding applications.",
+    "context_length": 400000,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "GPT",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000125",
+      "completion": "0.00001",
+      "request": "0",
+      "image": "0",
+      "web_search": "0",
+      "internal_reasoning": "0",
+      "input_cache_read": "0.000000125"
+    },
+    "top_provider": {
+      "context_length": 400000,
+      "max_completion_tokens": 128000,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "tool_choice",
+      "tools",
+      "top_logprobs"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "frequency_penalty": null
+    }
+  },
+  {
+    "id": "openai/gpt-5.1-codex-mini",
+    "canonical_slug": "openai/gpt-5.1-codex-mini-20251113",
+    "hugging_face_id": "",
+    "name": "OpenAI: GPT-5.1-Codex-Mini",
+    "created": 1763057820,
+    "description": "GPT-5.1-Codex-Mini is a smaller and faster version of GPT-5.1-Codex",
+    "context_length": 400000,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "image",
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "GPT",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000025",
+      "completion": "0.000002",
+      "request": "0",
+      "image": "0",
+      "web_search": "0",
+      "internal_reasoning": "0",
+      "input_cache_read": "0.000000025"
+    },
+    "top_provider": {
+      "context_length": 400000,
+      "max_completion_tokens": 100000,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "tool_choice",
+      "tools",
+      "top_logprobs"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "frequency_penalty": null
+    }
+  },
+  {
     "id": "openai/gpt-oss-120b",
     "canonical_slug": "openai/gpt-oss-120b",
     "hugging_face_id": "openai/gpt-oss-120b",
@@ -12676,13 +12724,13 @@
     "default_parameters": {}
   },
   {
-    "id": "openrouter/polaris-alpha",
-    "canonical_slug": "openrouter/polaris-alpha",
+    "id": "openrouter/sherlock-dash-alpha",
+    "canonical_slug": "openrouter/sherlock-dash-alpha",
     "hugging_face_id": "",
-    "name": "Polaris Alpha",
-    "created": 1762451707,
-    "description": "This is a cloaked model provided to the community to gather feedback. A powerful, general-purpose model that excels across real-world tasks, with standout performance in coding, tool calling, and instruction following.\n\n**Note:** All prompts and completions for this model are logged by the provider and may be used to improve the model.",
-    "context_length": 256000,
+    "name": "Sherlock Dash Alpha",
+    "created": 1763228989,
+    "description": "This is a cloaked model provided to the community to gather feedback. A frontier non-reasoning model that excels at tool calling, with a 1.8M context window and multimodal support.\n\n**Note:** All prompts and completions for this model are logged by the provider and may be used to improve the model.",
+    "context_length": 1840000,
     "architecture": {
       "modality": "text+image->text",
       "input_modalities": [
@@ -12704,8 +12752,8 @@
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 256000,
-      "max_completion_tokens": 128000,
+      "context_length": 1840000,
+      "max_completion_tokens": 64000,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -12717,8 +12765,57 @@
       "tools"
     ],
     "default_parameters": {
-      "temperature": null,
-      "top_p": null,
+      "temperature": 0.7,
+      "top_p": 0.95,
+      "frequency_penalty": null
+    }
+  },
+  {
+    "id": "openrouter/sherlock-think-alpha",
+    "canonical_slug": "openrouter/sherlock-think-alpha",
+    "hugging_face_id": "",
+    "name": "Sherlock Think Alpha",
+    "created": 1763228986,
+    "description": "This is a cloaked model provided to the community to gather feedback. A frontier reasoning model that excels at tool calling, with a 1.8M context window and multimodal support.\n\n**Note:** All prompts and completions for this model are logged by the provider and may be used to improve the model.",
+    "context_length": 1840000,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "request": "0",
+      "image": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 1840000,
+      "max_completion_tokens": 64000,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "response_format",
+      "structured_outputs",
+      "tool_choice",
+      "tools"
+    ],
+    "default_parameters": {
+      "temperature": 0.7,
+      "top_p": 0.95,
       "frequency_penalty": null
     }
   },
@@ -14082,7 +14179,6 @@
       "frequency_penalty",
       "include_reasoning",
       "logit_bias",
-      "logprobs",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -14096,7 +14192,6 @@
       "tool_choice",
       "tools",
       "top_k",
-      "top_logprobs",
       "top_p"
     ],
     "default_parameters": {}
@@ -15012,7 +15107,7 @@
     },
     "top_provider": {
       "context_length": 262144,
-      "max_completion_tokens": 32768,
+      "max_completion_tokens": null,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -15128,7 +15223,7 @@
     },
     "top_provider": {
       "context_length": 262144,
-      "max_completion_tokens": 32768,
+      "max_completion_tokens": null,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -15941,8 +16036,10 @@
       "min_p",
       "presence_penalty",
       "repetition_penalty",
+      "response_format",
       "seed",
       "stop",
+      "structured_outputs",
       "temperature",
       "top_k",
       "top_p"
@@ -16826,7 +16923,7 @@
     },
     "pricing": {
       "prompt": "0.00000035",
-      "completion": "0.00000155",
+      "completion": "0.0000015",
       "request": "0",
       "image": "0",
       "web_search": "0",
