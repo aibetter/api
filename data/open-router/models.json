@@ -408,12 +408,13 @@
     },
     "top_provider": {
       "context_length": 65536,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
+      "logit_bias",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -1747,10 +1748,10 @@
     }
   },
   {
-    "id": "arcee-ai/trinity-large-preview:free",
+    "id": "arcee-ai/trinity-large-preview",
     "canonical_slug": "arcee-ai/trinity-large-preview",
     "hugging_face_id": "arcee-ai/Trinity-Large-Preview",
-    "name": "Arcee AI: Trinity Large Preview (free)",
+    "name": "Arcee AI: Trinity Large Preview",
     "created": 1769552670,
     "description": "Trinity-Large-Preview is a frontier-scale open-weight language model from Arcee, built as a 400B-parameter sparse Mixture-of-Experts with 13B active parameters per token using 4-of-256 expert routing. It excels in creative writing,...",
     "context_length": 131000,
@@ -1766,8 +1767,8 @@
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0",
-      "completion": "0"
+      "prompt": "0.00000015",
+      "completion": "0.00000045"
     },
     "top_provider": {
       "context_length": 131000,
@@ -1793,7 +1794,7 @@
       "repetition_penalty": null
     },
     "knowledge_cutoff": null,
-    "expiration_date": "2026-04-22",
+    "expiration_date": null,
     "links": {
       "details": "/api/v1/models/arcee-ai/trinity-large-preview/endpoints"
     }
@@ -1891,6 +1892,7 @@
     "per_request_limits": null,
     "supported_parameters": [
       "include_reasoning",
+      "max_completion_tokens",
       "max_tokens",
       "reasoning",
       "response_format",
@@ -2102,10 +2104,8 @@
       "max_tokens",
       "presence_penalty",
       "repetition_penalty",
-      "response_format",
       "seed",
       "stop",
-      "structured_outputs",
       "temperature",
       "top_k",
       "top_p"
@@ -2217,6 +2217,62 @@
     "expiration_date": null,
     "links": {
       "details": "/api/v1/models/baidu/ernie-4.5-vl-424b-a47b/endpoints"
+    }
+  },
+  {
+    "id": "baidu/qianfan-ocr-fast:free",
+    "canonical_slug": "baidu/qianfan-ocr-fast-20260420",
+    "hugging_face_id": "",
+    "name": "Baidu: Qianfan-OCR-Fast (free)",
+    "created": 1776707472,
+    "description": "Qianfan-OCR-Fast is a domain-specific multimodal large model purpose-built for OCR. By leveraging specialized OCR training data while preserving versatile multimodal intelligence, it provides a powerful performance upgrade over Qianfan-OCR.",
+    "context_length": 65536,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "image",
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 65536,
+      "max_completion_tokens": 28672,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "seed",
+      "stop",
+      "temperature",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/baidu/qianfan-ocr-fast-20260420/endpoints"
     }
   },
   {
@@ -2816,12 +2872,13 @@
     },
     "top_provider": {
       "context_length": 163840,
-      "max_completion_tokens": 163840,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
+      "logit_bias",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -2868,7 +2925,7 @@
     },
     "top_provider": {
       "context_length": 163840,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -3038,7 +3095,7 @@
     },
     "top_provider": {
       "context_length": 163840,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 32768,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -3104,6 +3161,7 @@
     "supported_parameters": [
       "frequency_penalty",
       "include_reasoning",
+      "logit_bias",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -3159,7 +3217,9 @@
       "max_tokens",
       "presence_penalty",
       "reasoning",
+      "repetition_penalty",
       "response_format",
+      "seed",
       "stop",
       "structured_outputs",
       "temperature",
@@ -3195,11 +3255,11 @@
     "pricing": {
       "prompt": "0.00000021",
       "completion": "0.00000079",
-      "input_cache_read": "0.0000001300000002"
+      "input_cache_read": "0.00000013"
     },
     "top_provider": {
       "context_length": 163840,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 32768,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -3240,7 +3300,7 @@
     "name": "DeepSeek: DeepSeek V3.2",
     "created": 1764594642,
     "description": "DeepSeek-V3.2 is a large language model designed to harmonize high computational efficiency with strong reasoning and agentic tool-use performance. It introduces DeepSeek Sparse Attention (DSA), a fine-grained sparse attention mechanism...",
-    "context_length": 163840,
+    "context_length": 131072,
     "architecture": {
       "modality": "text->text",
       "input_modalities": [
@@ -3253,13 +3313,13 @@
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.000000259",
-      "completion": "0.00000042",
-      "input_cache_read": "0.000000135"
+      "prompt": "0.000000252",
+      "completion": "0.000000378",
+      "input_cache_read": "0.0000000252"
     },
     "top_provider": {
-      "context_length": 163840,
-      "max_completion_tokens": 163840,
+      "context_length": 131072,
+      "max_completion_tokens": 65536,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -3267,7 +3327,6 @@
       "frequency_penalty",
       "include_reasoning",
       "logit_bias",
-      "logprobs",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -3281,7 +3340,6 @@
       "tool_choice",
       "tools",
       "top_k",
-      "top_logprobs",
       "top_p"
     ],
     "default_parameters": {
@@ -3416,6 +3474,132 @@
     }
   },
   {
+    "id": "deepseek/deepseek-v4-flash",
+    "canonical_slug": "deepseek/deepseek-v4-flash-20260423",
+    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash",
+    "name": "DeepSeek: DeepSeek V4 Flash",
+    "created": 1777000666,
+    "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
+    "context_length": 1048576,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "DeepSeek",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000014",
+      "completion": "0.00000028",
+      "input_cache_read": "0.000000028"
+    },
+    "top_provider": {
+      "context_length": 1048576,
+      "max_completion_tokens": 384000,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/deepseek/deepseek-v4-flash-20260423/endpoints"
+    }
+  },
+  {
+    "id": "deepseek/deepseek-v4-pro",
+    "canonical_slug": "deepseek/deepseek-v4-pro-20260423",
+    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Pro",
+    "name": "DeepSeek: DeepSeek V4 Pro",
+    "created": 1777000679,
+    "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,...",
+    "context_length": 1048576,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "DeepSeek",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000000435",
+      "completion": "0.00000087",
+      "input_cache_read": "0.00000003625"
+    },
+    "top_provider": {
+      "context_length": 1048576,
+      "max_completion_tokens": 384000,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logprobs",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "response_format",
+      "seed",
+      "stop",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": 1,
+      "top_p": 1,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/deepseek/deepseek-v4-pro-20260423/endpoints"
+    }
+  },
+  {
     "id": "essentialai/rnj-1-instruct",
     "canonical_slug": "essentialai/rnj-1-instruct",
     "hugging_face_id": "EssentialAI/rnj-1-instruct",
@@ -3499,6 +3683,7 @@
       "completion": "0.0000004",
       "image": "0.0000001",
       "audio": "0.0000007",
+      "web_search": "0.014",
       "internal_reasoning": "0.0000004",
       "input_cache_read": "0.000000025",
       "input_cache_write": "0.00000008333333333333334"
@@ -3559,6 +3744,7 @@
       "completion": "0.0000003",
       "image": "0.000000075",
       "audio": "0.000000075",
+      "web_search": "0.014",
       "internal_reasoning": "0.0000003"
     },
     "top_provider": {
@@ -3617,6 +3803,7 @@
       "completion": "0.0000025",
       "image": "0.0000003",
       "audio": "0.000001",
+      "web_search": "0.014",
       "internal_reasoning": "0.0000025",
       "input_cache_read": "0.00000003",
       "input_cache_write": "0.00000008333333333333334"
@@ -3677,6 +3864,7 @@
       "completion": "0.0000025",
       "image": "0.0000003",
       "audio": "0.000001",
+      "web_search": "0.014",
       "internal_reasoning": "0.0000025",
       "input_cache_read": "0.00000003",
       "input_cache_write": "0.00000008333333333333334"
@@ -3735,6 +3923,7 @@
       "completion": "0.0000004",
       "image": "0.0000001",
       "audio": "0.0000003",
+      "web_search": "0.014",
       "internal_reasoning": "0.0000004",
       "input_cache_read": "0.00000001",
       "input_cache_write": "0.00000008333333333333334"
@@ -3797,6 +3986,7 @@
       "completion": "0.0000004",
       "image": "0.0000001",
       "audio": "0.0000003",
+      "web_search": "0.014",
       "internal_reasoning": "0.0000004",
       "input_cache_read": "0.00000001",
       "input_cache_write": "0.00000008333333333333334"
@@ -3859,6 +4049,7 @@
       "completion": "0.00001",
       "image": "0.00000125",
       "audio": "0.00000125",
+      "web_search": "0.014",
       "internal_reasoning": "0.00001",
       "input_cache_read": "0.000000125",
       "input_cache_write": "0.000000375"
@@ -3920,6 +4111,7 @@
       "completion": "0.00001",
       "image": "0.00000125",
       "audio": "0.00000125",
+      "web_search": "0.014",
       "internal_reasoning": "0.00001",
       "input_cache_read": "0.000000125",
       "input_cache_write": "0.000000375"
@@ -3978,6 +4170,7 @@
       "completion": "0.00001",
       "image": "0.00000125",
       "audio": "0.00000125",
+      "web_search": "0.014",
       "internal_reasoning": "0.00001",
       "input_cache_read": "0.000000125",
       "input_cache_write": "0.000000375"
@@ -4040,6 +4233,7 @@
       "completion": "0.000003",
       "image": "0.0000005",
       "audio": "0.000001",
+      "web_search": "0.014",
       "internal_reasoning": "0.000003",
       "input_cache_read": "0.00000005",
       "input_cache_write": "0.00000008333333333333334"
@@ -4100,6 +4294,7 @@
       "completion": "0.000012",
       "image": "0.000002",
       "audio": "0.000002",
+      "web_search": "0.014",
       "internal_reasoning": "0.000012",
       "input_cache_read": "0.0000002",
       "input_cache_write": "0.000000375"
@@ -4155,7 +4350,8 @@
     },
     "pricing": {
       "prompt": "0.0000005",
-      "completion": "0.000003"
+      "completion": "0.000003",
+      "web_search": "0.014"
     },
     "top_provider": {
       "context_length": 65536,
@@ -4216,6 +4412,7 @@
       "completion": "0.0000015",
       "image": "0.00000025",
       "audio": "0.0000005",
+      "web_search": "0.014",
       "internal_reasoning": "0.0000015",
       "input_cache_read": "0.000000025",
       "input_cache_write": "0.00000008333333333333334"
@@ -4281,6 +4478,7 @@
       "completion": "0.000012",
       "image": "0.000002",
       "audio": "0.000002",
+      "web_search": "0.014",
       "internal_reasoning": "0.000012",
       "input_cache_read": "0.0000002",
       "input_cache_write": "0.000000375"
@@ -4343,6 +4541,7 @@
       "completion": "0.000012",
       "image": "0.000002",
       "audio": "0.000002",
+      "web_search": "0.014",
       "internal_reasoning": "0.000012",
       "input_cache_read": "0.0000002",
       "input_cache_write": "0.000000375"
@@ -4410,7 +4609,9 @@
       "frequency_penalty",
       "max_tokens",
       "presence_penalty",
+      "repetition_penalty",
       "response_format",
+      "seed",
       "stop",
       "structured_outputs",
       "temperature",
@@ -4449,12 +4650,13 @@
     },
     "top_provider": {
       "context_length": 131072,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
+      "logit_bias",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -4462,7 +4664,10 @@
       "response_format",
       "seed",
       "stop",
+      "structured_outputs",
       "temperature",
+      "tool_choice",
+      "tools",
       "top_k",
       "top_p"
     ],
@@ -4559,6 +4764,8 @@
       "stop",
       "structured_outputs",
       "temperature",
+      "tool_choice",
+      "tools",
       "top_k",
       "top_p"
     ],
@@ -4648,12 +4855,13 @@
     },
     "top_provider": {
       "context_length": 131072,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
+      "logit_bias",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -4661,6 +4869,7 @@
       "response_format",
       "seed",
       "stop",
+      "structured_outputs",
       "temperature",
       "top_k",
       "top_p"
@@ -4873,9 +5082,8 @@
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.00000008",
-      "completion": "0.00000035",
-      "input_cache_read": "0.00000001"
+      "prompt": "0.00000006",
+      "completion": "0.00000033"
     },
     "top_provider": {
       "context_length": 262144,
@@ -4991,12 +5199,11 @@
     },
     "pricing": {
       "prompt": "0.00000013",
-      "completion": "0.00000038",
-      "input_cache_read": "0.0000000199999995"
+      "completion": "0.00000038"
     },
     "top_provider": {
       "context_length": 262144,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -5004,6 +5211,7 @@
       "frequency_penalty",
       "include_reasoning",
       "logit_bias",
+      "logprobs",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -5017,6 +5225,7 @@
       "tool_choice",
       "tools",
       "top_k",
+      "top_logprobs",
       "top_p"
     ],
     "default_parameters": {
@@ -5350,6 +5559,122 @@
     "expiration_date": null,
     "links": {
       "details": "/api/v1/models/inception/mercury-2-20260304/endpoints"
+    }
+  },
+  {
+    "id": "inclusionai/ling-2.6-1t:free",
+    "canonical_slug": "inclusionai/ling-2.6-1t-20260423",
+    "hugging_face_id": null,
+    "name": "inclusionAI: Ling-2.6-1T (free)",
+    "created": 1776948238,
+    "description": "Ling-2.6-1T is an instant (instruct) model from inclusionAI and the company’s trillion-parameter flagship, designed for real-world agents that require fast execution and high efficiency at scale. It uses a “fast...",
+    "context_length": 262144,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 262144,
+      "max_completion_tokens": 32768,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "max_tokens",
+      "presence_penalty",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": "2026-04-30",
+    "links": {
+      "details": "/api/v1/models/inclusionai/ling-2.6-1t-20260423/endpoints"
+    }
+  },
+  {
+    "id": "inclusionai/ling-2.6-flash:free",
+    "canonical_slug": "inclusionai/ling-2.6-flash-20260421",
+    "hugging_face_id": "",
+    "name": "inclusionAI: Ling-2.6-flash (free)",
+    "created": 1776795886,
+    "description": "Ling-2.6-flash is an instant (instruct) model from inclusionAI with 104B total parameters and 7.4B active parameters, designed for real-world agents that require fast responses, strong execution, and high token efficiency....",
+    "context_length": 262144,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 262144,
+      "max_completion_tokens": 32768,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "max_tokens",
+      "presence_penalty",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": "2026-04-29",
+    "links": {
+      "details": "/api/v1/models/inclusionai/ling-2.6-flash-20260421/endpoints"
     }
   },
   {
@@ -5835,12 +6160,13 @@
     },
     "top_provider": {
       "context_length": 131072,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
+      "logit_bias",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -5893,6 +6219,7 @@
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
+      "logit_bias",
       "logprobs",
       "max_tokens",
       "min_p",
@@ -5948,6 +6275,7 @@
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
+      "logit_bias",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -6123,12 +6451,12 @@
       "instruct_type": "llama3"
     },
     "pricing": {
-      "prompt": "0.00000012",
-      "completion": "0.00000038"
+      "prompt": "0.0000001",
+      "completion": "0.00000032"
     },
     "top_provider": {
       "context_length": 131072,
-      "max_completion_tokens": 131072,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -6287,6 +6615,7 @@
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
+      "logit_bias",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -6380,7 +6709,7 @@
     },
     "top_provider": {
       "context_length": 163840,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -6436,6 +6765,7 @@
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
+      "logit_bias",
       "logprobs",
       "max_tokens",
       "min_p",
@@ -6791,13 +7121,13 @@
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.000000118",
-      "completion": "0.00000099",
-      "input_cache_read": "0.000000059"
+      "prompt": "0.00000015",
+      "completion": "0.00000115",
+      "input_cache_read": "0.00000003"
     },
     "top_provider": {
       "context_length": 196608,
-      "max_completion_tokens": 65536,
+      "max_completion_tokens": 131072,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -7724,17 +8054,19 @@
       "instruct_type": "mistral"
     },
     "pricing": {
-      "prompt": "0.00000002",
-      "completion": "0.00000004"
+      "prompt": "0.00000001",
+      "completion": "0.00000003"
     },
     "top_provider": {
       "context_length": 131072,
-      "max_completion_tokens": 16384,
+      "max_completion_tokens": null,
       "is_moderated": false
     },
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
+      "logit_bias",
+      "logprobs",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -7747,6 +8079,7 @@
       "tool_choice",
       "tools",
       "top_k",
+      "top_logprobs",
       "top_p"
     ],
     "default_parameters": {
@@ -7841,6 +8174,7 @@
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
+      "logit_bias",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -7848,6 +8182,7 @@
       "response_format",
       "seed",
       "stop",
+      "structured_outputs",
       "temperature",
       "top_k",
       "top_p"
@@ -7999,7 +8334,7 @@
     },
     "top_provider": {
       "context_length": 128000,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -8157,6 +8492,7 @@
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
+      "logit_bias",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -8164,6 +8500,7 @@
       "response_format",
       "seed",
       "stop",
+      "structured_outputs",
       "temperature",
       "tool_choice",
       "tools",
@@ -8471,9 +8808,9 @@
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.0000003827",
-      "completion": "0.00000172",
-      "input_cache_read": "0.00000019135"
+      "prompt": "0.00000044",
+      "completion": "0.000002",
+      "input_cache_read": "0.00000022"
     },
     "top_provider": {
       "context_length": 262144,
@@ -8506,12 +8843,83 @@
     "default_parameters": {
       "temperature": null,
       "top_p": null,
-      "frequency_penalty": null
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
     },
     "knowledge_cutoff": null,
     "expiration_date": null,
     "links": {
       "details": "/api/v1/models/moonshotai/kimi-k2.5-0127/endpoints"
+    }
+  },
+  {
+    "id": "moonshotai/kimi-k2.6",
+    "canonical_slug": "moonshotai/kimi-k2.6-20260420",
+    "hugging_face_id": "moonshotai/Kimi-K2.6",
+    "name": "MoonshotAI: Kimi K2.6",
+    "created": 1776699402,
+    "description": "Kimi K2.6 is Moonshot AI's next-generation multimodal model, designed for long-horizon coding, coding-driven UI/UX generation, and multi-agent orchestration. It handles complex end-to-end coding tasks across Python, Rust, and Go, and...",
+    "context_length": 256000,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000007448",
+      "completion": "0.000004655",
+      "input_cache_read": "0.0000001463"
+    },
+    "top_provider": {
+      "context_length": 256000,
+      "max_completion_tokens": 65536,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "parallel_tool_calls",
+      "presence_penalty",
+      "reasoning",
+      "reasoning_effort",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/moonshotai/kimi-k2.6-20260420/endpoints"
     }
   },
   {
@@ -8635,6 +9043,7 @@
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
+      "max_tokens",
       "response_format",
       "structured_outputs",
       "temperature",
@@ -8734,6 +9143,7 @@
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
+      "logit_bias",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -8741,6 +9151,7 @@
       "response_format",
       "seed",
       "stop",
+      "structured_outputs",
       "temperature",
       "top_k",
       "top_p"
@@ -8822,12 +9233,13 @@
     },
     "top_provider": {
       "context_length": 131072,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
+      "logit_bias",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -8835,6 +9247,7 @@
       "response_format",
       "seed",
       "stop",
+      "structured_outputs",
       "temperature",
       "top_k",
       "top_p"
@@ -8973,6 +9386,7 @@
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
+      "logit_bias",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -9018,13 +9432,14 @@
     },
     "top_provider": {
       "context_length": 131072,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
       "include_reasoning",
+      "logit_bias",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -9039,7 +9454,14 @@
       "top_k",
       "top_p"
     ],
-    "default_parameters": null,
+    "default_parameters": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
     "knowledge_cutoff": "2024-03-31",
     "expiration_date": null,
     "links": {
@@ -9071,13 +9493,14 @@
     },
     "top_provider": {
       "context_length": 262144,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 228000,
       "is_moderated": false
     },
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
       "include_reasoning",
+      "logit_bias",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -9296,13 +9719,14 @@
     },
     "top_provider": {
       "context_length": 131072,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
       "include_reasoning",
+      "logit_bias",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -9403,13 +9827,14 @@
     },
     "top_provider": {
       "context_length": 131072,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
       "include_reasoning",
+      "logit_bias",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -10793,8 +11218,6 @@
       "stop",
       "structured_outputs",
       "temperature",
-      "tool_choice",
-      "tools",
       "top_logprobs",
       "top_p"
     ],
@@ -10856,8 +11279,6 @@
       "stop",
       "structured_outputs",
       "temperature",
-      "tool_choice",
-      "tools",
       "top_logprobs",
       "top_p"
     ],
@@ -11707,6 +12128,68 @@
     }
   },
   {
+    "id": "openai/gpt-5.4-image-2",
+    "canonical_slug": "openai/gpt-5.4-image-2-20260421",
+    "hugging_face_id": "",
+    "name": "OpenAI: GPT-5.4 Image 2",
+    "created": 1776797528,
+    "description": "[GPT-5.4](https://openrouter.ai/openai/gpt-5.4) Image 2 combines OpenAI's GPT-5.4 model with state-of-the-art image generation capabilities from GPT Image 2. It enables rich multimodal workflows, allowing users to seamlessly move between reasoning, coding, and...",
+    "context_length": 272000,
+    "architecture": {
+      "modality": "text+image+file->text+image",
+      "input_modalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "output_modalities": [
+        "image",
+        "text"
+      ],
+      "tokenizer": "GPT",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000008",
+      "completion": "0.000015",
+      "web_search": "0.01",
+      "input_cache_read": "0.000002"
+    },
+    "top_provider": {
+      "context_length": 272000,
+      "max_completion_tokens": 128000,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "top_logprobs"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/openai/gpt-5.4-image-2-20260421/endpoints"
+    }
+  },
+  {
     "id": "openai/gpt-5.4-mini",
     "canonical_slug": "openai/gpt-5.4-mini-20260317",
     "hugging_face_id": "",
@@ -11880,6 +12363,119 @@
     }
   },
   {
+    "id": "openai/gpt-5.5",
+    "canonical_slug": "openai/gpt-5.5-20260423",
+    "hugging_face_id": "",
+    "name": "OpenAI: GPT-5.5",
+    "created": 1777051893,
+    "description": "GPT-5.5 is OpenAI’s frontier model designed for complex professional workloads, building on GPT-5.4 with stronger reasoning, higher reliability, and improved token efficiency on hard tasks. It features a 1M+ token...",
+    "context_length": 1050000,
+    "architecture": {
+      "modality": "text+image+file->text",
+      "input_modalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "GPT",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000005",
+      "completion": "0.00003",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000005"
+    },
+    "top_provider": {
+      "context_length": 1050000,
+      "max_completion_tokens": 128000,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "response_format",
+      "seed",
+      "structured_outputs",
+      "tool_choice",
+      "tools"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/openai/gpt-5.5-20260423/endpoints"
+    }
+  },
+  {
+    "id": "openai/gpt-5.5-pro",
+    "canonical_slug": "openai/gpt-5.5-pro-20260423",
+    "hugging_face_id": "",
+    "name": "OpenAI: GPT-5.5 Pro",
+    "created": 1777051896,
+    "description": "GPT-5.5 Pro is OpenAI’s high-capability model optimized for deep reasoning and accuracy on complex, high-stakes workloads. It features a 1M+ token context window (922K input, 128K output) with support for...",
+    "context_length": 1050000,
+    "architecture": {
+      "modality": "text+image+file->text",
+      "input_modalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "GPT",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00003",
+      "completion": "0.00018",
+      "web_search": "0.01"
+    },
+    "top_provider": {
+      "context_length": 1050000,
+      "max_completion_tokens": 128000,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "response_format",
+      "seed",
+      "structured_outputs",
+      "tool_choice",
+      "tools"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/openai/gpt-5.5-pro-20260423/endpoints"
+    }
+  },
+  {
     "id": "openai/gpt-audio",
     "canonical_slug": "openai/gpt-audio",
     "hugging_face_id": "",
@@ -12022,7 +12618,7 @@
     },
     "top_provider": {
       "context_length": 131072,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 131072,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -12133,7 +12729,7 @@
     },
     "top_provider": {
       "context_length": 131072,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 131072,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -12819,7 +13415,7 @@
     "hugging_face_id": null,
     "name": "Auto Router",
     "created": 1699401600,
-    "description": "Your prompt will be processed by a meta-model and routed to one of dozens of models (see below), optimizing for the best possible output. To see which model was used,...",
+    "description": "\"Your prompt will be processed by a meta-model and routed to one of dozens of models (see below), optimizing for the best possible output. To see which model was used,...",
     "context_length": 2000000,
     "architecture": {
       "modality": "text+image+file+audio+video->text+image",
@@ -12873,7 +13469,10 @@
     "default_parameters": {
       "temperature": null,
       "top_p": null,
-      "frequency_penalty": null
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
     },
     "knowledge_cutoff": null,
     "expiration_date": null,
@@ -12920,58 +13519,6 @@
     "expiration_date": null,
     "links": {
       "details": "/api/v1/models/openrouter/bodybuilder/endpoints"
-    }
-  },
-  {
-    "id": "openrouter/elephant-alpha",
-    "canonical_slug": "openrouter/elephant-alpha",
-    "hugging_face_id": null,
-    "name": "Elephant",
-    "created": 1776052598,
-    "description": "Elephant Alpha is a 100B-parameter text model focused on intelligence efficiency, delivering strong performance while minimizing token usage. It supports a 256K context window with up to 32K output tokens,...",
-    "context_length": 262144,
-    "architecture": {
-      "modality": "text->text",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "tokenizer": "Other",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 262144,
-      "max_completion_tokens": 32768,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "supported_parameters": [
-      "max_tokens",
-      "response_format",
-      "structured_outputs",
-      "temperature",
-      "tool_choice",
-      "tools",
-      "top_p"
-    ],
-    "default_parameters": {
-      "temperature": null,
-      "top_p": null,
-      "top_k": null,
-      "frequency_penalty": null,
-      "presence_penalty": null,
-      "repetition_penalty": null
-    },
-    "knowledge_cutoff": null,
-    "expiration_date": null,
-    "links": {
-      "details": "/api/v1/models/openrouter/elephant-alpha/endpoints"
     }
   },
   {
@@ -13031,6 +13578,50 @@
     "expiration_date": null,
     "links": {
       "details": "/api/v1/models/openrouter/free/endpoints"
+    }
+  },
+  {
+    "id": "openrouter/pareto-code",
+    "canonical_slug": "openrouter/pareto-code",
+    "hugging_face_id": "",
+    "name": "Pareto Code Router",
+    "created": 1776747900,
+    "description": "The Pareto Router is a way to have OpenRouter always pick a strong coding model for your needs without committing to a specific one. You express a single `min_coding_score` preference...",
+    "context_length": 200000,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Router",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "-1",
+      "completion": "-1"
+    },
+    "top_provider": {
+      "context_length": null,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/openrouter/pareto-code/endpoints"
     }
   },
   {
@@ -13365,6 +13956,7 @@
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
+      "logit_bias",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -13372,6 +13964,7 @@
       "response_format",
       "seed",
       "stop",
+      "structured_outputs",
       "temperature",
       "tool_choice",
       "tools",
@@ -13915,6 +14508,7 @@
     "supported_parameters": [
       "frequency_penalty",
       "include_reasoning",
+      "logit_bias",
       "logprobs",
       "max_tokens",
       "min_p",
@@ -14012,7 +14606,7 @@
     },
     "top_provider": {
       "context_length": 262144,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -14049,7 +14643,7 @@
     "name": "Qwen: Qwen3 235B A22B Thinking 2507",
     "created": 1753449557,
     "description": "Qwen3-235B-A22B-Thinking-2507 is a high-performance, open-weight Mixture-of-Experts (MoE) language model optimized for complex reasoning tasks. It activates 22B of its 235B parameters per forward pass and natively supports up to 262,144...",
-    "context_length": 262144,
+    "context_length": 131072,
     "architecture": {
       "modality": "text->text",
       "input_modalities": [
@@ -14062,12 +14656,12 @@
       "instruct_type": "qwen3"
     },
     "pricing": {
-      "prompt": "0.00000013",
-      "completion": "0.0000006"
+      "prompt": "0.0000001495",
+      "completion": "0.000001495"
     },
     "top_provider": {
-      "context_length": 262144,
-      "max_completion_tokens": 262144,
+      "context_length": 131072,
+      "max_completion_tokens": null,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -14126,13 +14720,14 @@
     },
     "top_provider": {
       "context_length": 40960,
-      "max_completion_tokens": 40960,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
       "include_reasoning",
+      "logit_bias",
       "logprobs",
       "max_tokens",
       "min_p",
@@ -14410,12 +15005,11 @@
     },
     "pricing": {
       "prompt": "0.00000022",
-      "completion": "0.000001",
-      "input_cache_read": "0.000000022"
+      "completion": "0.0000018"
     },
     "top_provider": {
       "context_length": 262144,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 65536,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -14566,9 +15160,9 @@
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.00000015",
+      "prompt": "0.00000014",
       "completion": "0.0000008",
-      "input_cache_read": "0.00000012"
+      "input_cache_read": "0.00000009"
     },
     "top_provider": {
       "context_length": 262144,
@@ -14834,7 +15428,7 @@
     },
     "top_provider": {
       "context_length": 262144,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -14997,7 +15591,7 @@
     },
     "top_provider": {
       "context_length": 262144,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -15069,7 +15663,6 @@
       "response_format",
       "seed",
       "stop",
-      "structured_outputs",
       "temperature",
       "tool_choice",
       "tools",
@@ -15910,6 +16503,7 @@
     "supported_parameters": [
       "frequency_penalty",
       "include_reasoning",
+      "max_tokens",
       "reasoning",
       "temperature",
       "tool_choice",
@@ -15919,7 +16513,7 @@
     ],
     "default_parameters": {},
     "knowledge_cutoff": "2024-06-30",
-    "expiration_date": null,
+    "expiration_date": "2026-04-29",
     "links": {
       "details": "/api/v1/models/qwen/qwq-32b/endpoints"
     }
@@ -16205,12 +16799,13 @@
     },
     "top_provider": {
       "context_length": 8192,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
+      "logit_bias",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -16310,6 +16905,7 @@
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
+      "logit_bias",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -16317,6 +16913,7 @@
       "response_format",
       "seed",
       "stop",
+      "structured_outputs",
       "temperature",
       "tool_choice",
       "tools",
@@ -16361,6 +16958,7 @@
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
+      "logit_bias",
       "logprobs",
       "max_tokens",
       "min_p",
@@ -16414,11 +17012,11 @@
     "supported_parameters": [
       "frequency_penalty",
       "include_reasoning",
+      "logit_bias",
       "max_tokens",
       "min_p",
       "presence_penalty",
       "reasoning",
-      "reasoning_effort",
       "repetition_penalty",
       "response_format",
       "seed",
@@ -16518,6 +17116,7 @@
     "supported_parameters": [
       "frequency_penalty",
       "include_reasoning",
+      "max_tokens",
       "reasoning",
       "response_format",
       "structured_outputs",
@@ -16530,6 +17129,62 @@
     "expiration_date": null,
     "links": {
       "details": "/api/v1/models/tencent/hunyuan-a13b-instruct/endpoints"
+    }
+  },
+  {
+    "id": "tencent/hy3-preview:free",
+    "canonical_slug": "tencent/hy3-preview-20260421",
+    "hugging_face_id": "tencent/Hy3-preview",
+    "name": "Tencent: Hy3 preview (free)",
+    "created": 1776878150,
+    "description": "Hy3 preview is a high-efficiency Mixture-of-Experts model from Tencent designed for agentic workflows and production use. It supports configurable reasoning levels across disabled, low, and high modes, allowing it to...",
+    "context_length": 262144,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 262144,
+      "max_completion_tokens": 262144,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "stop",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": 0.9,
+      "top_p": 1,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": "2026-05-08",
+    "links": {
+      "details": "/api/v1/models/tencent/hy3-preview-20260421/endpoints"
     }
   },
   {
@@ -17557,9 +18212,7 @@
     "supported_parameters": [
       "frequency_penalty",
       "include_reasoning",
-      "logit_bias",
       "max_tokens",
-      "min_p",
       "presence_penalty",
       "reasoning",
       "repetition_penalty",
@@ -17699,6 +18352,123 @@
     "expiration_date": null,
     "links": {
       "details": "/api/v1/models/xiaomi/mimo-v2-pro-20260318/endpoints"
+    }
+  },
+  {
+    "id": "xiaomi/mimo-v2.5",
+    "canonical_slug": "xiaomi/mimo-v2.5-20260422",
+    "hugging_face_id": null,
+    "name": "Xiaomi: MiMo-V2.5",
+    "created": 1776874269,
+    "description": "MiMo-V2.5 is a native omnimodal model by Xiaomi. It delivers Pro-level agentic performance at roughly half the inference cost, while surpassing MiMo-V2-Omni in multimodal perception across image and video understanding...",
+    "context_length": 1048576,
+    "architecture": {
+      "modality": "text+image+audio+video->text",
+      "input_modalities": [
+        "text",
+        "audio",
+        "image",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000004",
+      "completion": "0.000002",
+      "input_cache_read": "0.00000008"
+    },
+    "top_provider": {
+      "context_length": 1048576,
+      "max_completion_tokens": 131072,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "response_format",
+      "stop",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/xiaomi/mimo-v2.5-20260422/endpoints"
+    }
+  },
+  {
+    "id": "xiaomi/mimo-v2.5-pro",
+    "canonical_slug": "xiaomi/mimo-v2.5-pro-20260422",
+    "hugging_face_id": null,
+    "name": "Xiaomi: MiMo-V2.5-Pro",
+    "created": 1776874273,
+    "description": "MiMo-V2.5-Pro is Xiaomi’s flagship model, delivering strong performance in general agentic capabilities, complex software engineering, and long-horizon tasks, with top rankings on benchmarks such as ClawEval, GDPVal, and SWE-bench Pro....",
+    "context_length": 1048576,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000001",
+      "completion": "0.000003",
+      "input_cache_read": "0.0000002"
+    },
+    "top_provider": {
+      "context_length": 1048576,
+      "max_completion_tokens": 131072,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "response_format",
+      "stop",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/xiaomi/mimo-v2.5-pro-20260422/endpoints"
     }
   },
   {
@@ -18052,11 +18822,12 @@
     },
     "pricing": {
       "prompt": "0.0000003",
-      "completion": "0.0000009"
+      "completion": "0.0000009",
+      "input_cache_read": "0.00000005"
     },
     "top_provider": {
       "context_length": 131072,
-      "max_completion_tokens": 131072,
+      "max_completion_tokens": 24000,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -18064,14 +18835,11 @@
       "frequency_penalty",
       "include_reasoning",
       "max_tokens",
-      "min_p",
       "presence_penalty",
       "reasoning",
       "repetition_penalty",
-      "response_format",
       "seed",
       "stop",
-      "structured_outputs",
       "temperature",
       "tool_choice",
       "tools",
@@ -18109,13 +18877,12 @@
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.00000039",
-      "completion": "0.00000175",
-      "input_cache_read": "0.000000195"
+      "prompt": "0.00000038",
+      "completion": "0.00000174"
     },
     "top_provider": {
       "context_length": 202752,
-      "max_completion_tokens": 65535,
+      "max_completion_tokens": null,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -18173,17 +18940,18 @@
     "pricing": {
       "prompt": "0.00000006",
       "completion": "0.0000004",
-      "input_cache_read": "0.0000000100000002"
+      "input_cache_read": "0.00000001"
     },
     "top_provider": {
       "context_length": 202752,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
     "supported_parameters": [
       "frequency_penalty",
       "include_reasoning",
+      "logit_bias",
       "max_tokens",
       "min_p",
       "presence_penalty",
@@ -18217,7 +18985,7 @@
     "name": "Z.ai: GLM 5",
     "created": 1770829182,
     "description": "GLM-5 is Z.ai’s flagship open-source foundation model engineered for complex systems design and long-horizon agent workflows. Built for expert developers, it delivers production-grade performance on large-scale programming tasks, rivaling leading...",
-    "context_length": 80000,
+    "context_length": 202752,
     "architecture": {
       "modality": "text->text",
       "input_modalities": [
@@ -18230,12 +18998,13 @@
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.00000072",
-      "completion": "0.0000023"
+      "prompt": "0.0000006",
+      "completion": "0.00000208",
+      "input_cache_read": "0.00000012"
     },
     "top_provider": {
-      "context_length": 80000,
-      "max_completion_tokens": 131072,
+      "context_length": 202752,
+      "max_completion_tokens": 16384,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -18353,9 +19122,9 @@
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.00000095",
-      "completion": "0.00000315",
-      "input_cache_read": "0.000000475"
+      "prompt": "0.00000105",
+      "completion": "0.0000035",
+      "input_cache_read": "0.000000525"
     },
     "top_provider": {
       "context_length": 202752,
@@ -18454,6 +19223,64 @@
     "expiration_date": null,
     "links": {
       "details": "/api/v1/models/z-ai/glm-5v-turbo-20260401/endpoints"
+    }
+  },
+  {
+    "id": "~anthropic/claude-opus-latest",
+    "canonical_slug": "~anthropic/claude-opus-latest",
+    "hugging_face_id": "",
+    "name": "Anthropic: Claude Opus Latest",
+    "created": 1776795361,
+    "description": "This model always redirects to the latest model in the Claude Opus family.",
+    "context_length": 1000000,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Router",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000005",
+      "completion": "0.000025",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000005",
+      "input_cache_write": "0.00000625"
+    },
+    "top_provider": {
+      "context_length": 1000000,
+      "max_completion_tokens": 128000,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "response_format",
+      "stop",
+      "structured_outputs",
+      "tool_choice",
+      "tools",
+      "verbosity"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/~anthropic/claude-opus-latest/endpoints"
     }
   }
 ]
