@@ -435,7 +435,7 @@
       "frequency_penalty": null
     },
     "knowledge_cutoff": null,
-    "expiration_date": null,
+    "expiration_date": "2026-05-07",
     "links": {
       "details": "/api/v1/models/allenai/olmo-3.1-32b-instruct-20251215/endpoints"
     }
@@ -1051,7 +1051,10 @@
     "default_parameters": {
       "temperature": null,
       "top_p": null,
-      "frequency_penalty": null
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
     },
     "knowledge_cutoff": null,
     "expiration_date": null,
@@ -1270,7 +1273,7 @@
     "top_provider": {
       "context_length": 1000000,
       "max_completion_tokens": 128000,
-      "is_moderated": true
+      "is_moderated": false
     },
     "per_request_limits": null,
     "supported_parameters": [
@@ -1392,7 +1395,7 @@
     "top_provider": {
       "context_length": 1000000,
       "max_completion_tokens": 128000,
-      "is_moderated": true
+      "is_moderated": false
     },
     "per_request_limits": null,
     "supported_parameters": [
@@ -1510,7 +1513,7 @@
     "top_provider": {
       "context_length": 1000000,
       "max_completion_tokens": 64000,
-      "is_moderated": false
+      "is_moderated": true
     },
     "per_request_limits": null,
     "supported_parameters": [
@@ -3495,7 +3498,7 @@
     "pricing": {
       "prompt": "0.00000014",
       "completion": "0.00000028",
-      "input_cache_read": "0.000000028"
+      "input_cache_read": "0.0000000028"
     },
     "top_provider": {
       "context_length": 1048576,
@@ -3560,7 +3563,7 @@
     "pricing": {
       "prompt": "0.000000435",
       "completion": "0.00000087",
-      "input_cache_read": "0.00000003625"
+      "input_cache_read": "0.000000003625"
     },
     "top_provider": {
       "context_length": 1048576,
@@ -3571,13 +3574,17 @@
     "supported_parameters": [
       "frequency_penalty",
       "include_reasoning",
+      "logit_bias",
       "logprobs",
       "max_tokens",
+      "min_p",
       "presence_penalty",
       "reasoning",
+      "repetition_penalty",
       "response_format",
       "seed",
       "stop",
+      "structured_outputs",
       "temperature",
       "tool_choice",
       "tools",
@@ -3662,7 +3669,7 @@
     "name": "Google: Gemini 2.0 Flash",
     "created": 1738769413,
     "description": "Gemini Flash 2.0 offers a significantly faster time to first token (TTFT) compared to [Gemini Flash 1.5](/google/gemini-flash-1.5), while maintaining quality on par with larger models like [Gemini Pro 1.5](/google/gemini-pro-1.5). It...",
-    "context_length": 1000000,
+    "context_length": 1048576,
     "architecture": {
       "modality": "text+image+file+audio+video->text",
       "input_modalities": [
@@ -3689,7 +3696,7 @@
       "input_cache_write": "0.00000008333333333333334"
     },
     "top_provider": {
-      "context_length": 1000000,
+      "context_length": 1048576,
       "max_completion_tokens": 8192,
       "is_moderated": false
     },
@@ -4260,7 +4267,10 @@
     "default_parameters": {
       "temperature": null,
       "top_p": null,
-      "frequency_penalty": null
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
     },
     "knowledge_cutoff": null,
     "expiration_date": null,
@@ -4505,7 +4515,10 @@
     "default_parameters": {
       "temperature": null,
       "top_p": null,
-      "frequency_penalty": null
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
     },
     "knowledge_cutoff": null,
     "expiration_date": null,
@@ -5507,6 +5520,65 @@
     }
   },
   {
+    "id": "ibm-granite/granite-4.1-8b",
+    "canonical_slug": "ibm-granite/granite-4.1-8b-20260429",
+    "hugging_face_id": "ibm-granite/granite-4.1-8b",
+    "name": "IBM: Granite 4.1 8B",
+    "created": 1777577071,
+    "description": "Granite 4.1 8B is a dense, decoder-only 8-billion-parameter language model from IBM, part of the Granite 4.1 family. It supports a 131K-token context window and is designed for enterprise tasks...",
+    "context_length": 131072,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000005",
+      "completion": "0.0000001",
+      "input_cache_read": "0.00000005"
+    },
+    "top_provider": {
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "max_tokens",
+      "presence_penalty",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/ibm-granite/granite-4.1-8b-20260429/endpoints"
+    }
+  },
+  {
     "id": "inception/mercury-2",
     "canonical_slug": "inception/mercury-2-20260304",
     "hugging_face_id": null,
@@ -5614,16 +5686,16 @@
       "repetition_penalty": null
     },
     "knowledge_cutoff": null,
-    "expiration_date": "2026-04-30",
+    "expiration_date": "2026-05-07",
     "links": {
       "details": "/api/v1/models/inclusionai/ling-2.6-1t-20260423/endpoints"
     }
   },
   {
-    "id": "inclusionai/ling-2.6-flash:free",
+    "id": "inclusionai/ling-2.6-flash",
     "canonical_slug": "inclusionai/ling-2.6-flash-20260421",
     "hugging_face_id": "",
-    "name": "inclusionAI: Ling-2.6-flash (free)",
+    "name": "inclusionAI: Ling-2.6-flash",
     "created": 1776795886,
     "description": "Ling-2.6-flash is an instant (instruct) model from inclusionAI with 104B total parameters and 7.4B active parameters, designed for real-world agents that require fast responses, strong execution, and high token efficiency....",
     "context_length": 262144,
@@ -5639,8 +5711,9 @@
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0",
-      "completion": "0"
+      "prompt": "0.00000008",
+      "completion": "0.00000024",
+      "input_cache_read": "0.000000016"
     },
     "top_provider": {
       "context_length": 262144,
@@ -5672,7 +5745,7 @@
       "repetition_penalty": null
     },
     "knowledge_cutoff": null,
-    "expiration_date": "2026-04-29",
+    "expiration_date": null,
     "links": {
       "details": "/api/v1/models/inclusionai/ling-2.6-flash-20260421/endpoints"
     }
@@ -6130,7 +6203,7 @@
     ],
     "default_parameters": {},
     "knowledge_cutoff": "2023-12-31",
-    "expiration_date": null,
+    "expiration_date": "2026-05-07",
     "links": {
       "details": "/api/v1/models/meta-llama/llama-3-8b-instruct/endpoints"
     }
@@ -8054,7 +8127,7 @@
       "instruct_type": "mistral"
     },
     "pricing": {
-      "prompt": "0.00000001",
+      "prompt": "0.00000002",
       "completion": "0.00000003"
     },
     "top_provider": {
@@ -8365,51 +8438,6 @@
     }
   },
   {
-    "id": "mistralai/mistral-small-creative",
-    "canonical_slug": "mistralai/mistral-small-creative-20251216",
-    "hugging_face_id": null,
-    "name": "Mistral: Mistral Small Creative",
-    "created": 1765908653,
-    "description": "Mistral Small Creative is an experimental small model designed for creative writing, narrative generation, roleplay and character-driven dialogue, general-purpose instruction following, and conversational agents.",
-    "context_length": 32768,
-    "architecture": {
-      "modality": "text->text",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "tokenizer": "Mistral",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.0000001",
-      "completion": "0.0000003",
-      "input_cache_read": "0.00000001"
-    },
-    "top_provider": {
-      "context_length": 32768,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "supported_parameters": [
-      "tool_choice",
-      "tools"
-    ],
-    "default_parameters": {
-      "temperature": 0.3,
-      "top_p": 0.95,
-      "frequency_penalty": null
-    },
-    "knowledge_cutoff": null,
-    "expiration_date": "2026-04-30",
-    "links": {
-      "details": "/api/v1/models/mistralai/mistral-small-creative-20251216/endpoints"
-    }
-  },
-  {
     "id": "mistralai/mixtral-8x22b-instruct",
     "canonical_slug": "mistralai/mixtral-8x22b-instruct",
     "hugging_face_id": "mistralai/Mixtral-8x22B-Instruct-v0.1",
@@ -8511,7 +8539,7 @@
       "temperature": 0.3
     },
     "knowledge_cutoff": "2023-12-31",
-    "expiration_date": null,
+    "expiration_date": "2026-05-08",
     "links": {
       "details": "/api/v1/models/mistralai/mixtral-8x7b-instruct/endpoints"
     }
@@ -8861,7 +8889,7 @@
     "name": "MoonshotAI: Kimi K2.6",
     "created": 1776699402,
     "description": "Kimi K2.6 is Moonshot AI's next-generation multimodal model, designed for long-horizon coding, coding-driven UI/UX generation, and multi-agent orchestration. It handles complex end-to-end coding tasks across Python, Rust, and Go, and...",
-    "context_length": 256000,
+    "context_length": 262142,
     "architecture": {
       "modality": "text+image->text",
       "input_modalities": [
@@ -8875,13 +8903,13 @@
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.0000007448",
-      "completion": "0.000004655",
-      "input_cache_read": "0.0000001463"
+      "prompt": "0.00000074",
+      "completion": "0.00000349",
+      "input_cache_read": "0.00000014"
     },
     "top_provider": {
-      "context_length": 256000,
-      "max_completion_tokens": 65536,
+      "context_length": 262142,
+      "max_completion_tokens": 262142,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -9402,7 +9430,7 @@
     ],
     "default_parameters": {},
     "knowledge_cutoff": "2023-12-31",
-    "expiration_date": null,
+    "expiration_date": "2026-05-08",
     "links": {
       "details": "/api/v1/models/nvidia/llama-3.1-nemotron-70b-instruct/endpoints"
     }
@@ -9577,6 +9605,62 @@
     }
   },
   {
+    "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "canonical_slug": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning-20260428",
+    "hugging_face_id": null,
+    "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
+    "created": 1777393095,
+    "description": "NVIDIA Nemotron™ 3 Nano Omni is a 30B-A3B open multimodal model designed to function as a perception and context sub-agent in enterprise agent systems. It accepts text, image, video, and...",
+    "context_length": 256000,
+    "architecture": {
+      "modality": "text+image+audio+video->text",
+      "input_modalities": [
+        "text",
+        "audio",
+        "image",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 256000,
+      "max_completion_tokens": 65536,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "seed",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning-20260428/endpoints"
+    }
+  },
+  {
     "id": "nvidia/nemotron-3-super-120b-a12b",
     "canonical_slug": "nvidia/nemotron-3-super-120b-a12b-20230311",
     "hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
@@ -9745,7 +9829,7 @@
       "frequency_penalty": null
     },
     "knowledge_cutoff": null,
-    "expiration_date": null,
+    "expiration_date": "2026-05-07",
     "links": {
       "details": "/api/v1/models/nvidia/nemotron-nano-12b-v2-vl/endpoints"
     }
@@ -11979,7 +12063,7 @@
     "pricing": {
       "prompt": "0.00000175",
       "completion": "0.000014",
-      "web_search": "0.1",
+      "web_search": "0.01",
       "input_cache_read": "0.000000175"
     },
     "top_provider": {
@@ -12397,6 +12481,7 @@
     "per_request_limits": null,
     "supported_parameters": [
       "include_reasoning",
+      "max_completion_tokens",
       "max_tokens",
       "reasoning",
       "response_format",
@@ -12614,11 +12699,11 @@
     },
     "pricing": {
       "prompt": "0.000000039",
-      "completion": "0.00000019"
+      "completion": "0.00000018"
     },
     "top_provider": {
       "context_length": 131072,
-      "max_completion_tokens": 131072,
+      "max_completion_tokens": null,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -12742,7 +12827,6 @@
       "min_p",
       "presence_penalty",
       "reasoning",
-      "reasoning_effort",
       "repetition_penalty",
       "response_format",
       "seed",
@@ -13581,6 +13665,64 @@
     }
   },
   {
+    "id": "openrouter/owl-alpha",
+    "canonical_slug": "openrouter/owl-alpha",
+    "hugging_face_id": null,
+    "name": "Owl Alpha",
+    "created": 1777398589,
+    "description": "Owl Alpha is a high-performance foundation model designed for agentic workloads. Natively supports tool use, and long-context tasks, with strong performance in code generation, automated workflows, and complex instruction execution....",
+    "context_length": 1048756,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 1048756,
+      "max_completion_tokens": 262144,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "logit_bias",
+      "max_tokens",
+      "presence_penalty",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/openrouter/owl-alpha/endpoints"
+    }
+  },
+  {
     "id": "openrouter/pareto-code",
     "canonical_slug": "openrouter/pareto-code",
     "hugging_face_id": "",
@@ -13871,6 +14013,108 @@
     }
   },
   {
+    "id": "poolside/laguna-m.1:free",
+    "canonical_slug": "poolside/laguna-m.1-20260312",
+    "hugging_face_id": null,
+    "name": "Poolside: Laguna M.1 (free)",
+    "created": 1777388504,
+    "description": "Laguna M.1 is the flagship coding agent model from [Poolside](https://poolside.ai), optimized for complex software engineering tasks. Designed for agentic coding workflows, it supports tool calling and reasoning, with a 128K...",
+    "context_length": 131072,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 131072,
+      "max_completion_tokens": 8192,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "temperature",
+      "tool_choice",
+      "tools"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/poolside/laguna-m.1-20260312/endpoints"
+    }
+  },
+  {
+    "id": "poolside/laguna-xs.2:free",
+    "canonical_slug": "poolside/laguna-xs.2-20260421",
+    "hugging_face_id": "poolside/Laguna-XS.2",
+    "name": "Poolside: Laguna XS.2 (free)",
+    "created": 1777389604,
+    "description": "Laguna XS.2 is the second-generation model in the XS size class from [Poolside](https://poolside.ai), their efficient coding agent series. It combines tool calling and reasoning capabilities with a compact footprint, offering...",
+    "context_length": 131072,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 131072,
+      "max_completion_tokens": 8192,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "temperature",
+      "tool_choice",
+      "tools"
+    ],
+    "default_parameters": {
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/poolside/laguna-xs.2-20260421/endpoints"
+    }
+  },
+  {
     "id": "prime-intellect/intellect-3",
     "canonical_slug": "prime-intellect/intellect-3-20251126",
     "hugging_face_id": "PrimeIntellect/INTELLECT-3-FP8",
@@ -13945,8 +14189,8 @@
       "instruct_type": "chatml"
     },
     "pricing": {
-      "prompt": "0.00000012",
-      "completion": "0.00000039"
+      "prompt": "0.00000036",
+      "completion": "0.0000004"
     },
     "top_provider": {
       "context_length": 32768,
@@ -15160,9 +15404,9 @@
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.00000014",
+      "prompt": "0.00000012",
       "completion": "0.0000008",
-      "input_cache_read": "0.00000009"
+      "input_cache_read": "0.00000007"
     },
     "top_provider": {
       "context_length": 262144,
@@ -16413,6 +16657,287 @@
     }
   },
   {
+    "id": "qwen/qwen3.5-plus-20260420",
+    "canonical_slug": "qwen/qwen3.5-plus-20260420",
+    "hugging_face_id": null,
+    "name": "Qwen: Qwen3.5 Plus 2026-04-20",
+    "created": 1777261368,
+    "description": "Qwen3.5 Plus (April 2026) is a large-scale multimodal language model from Alibaba. It accepts text, image, and video input and produces text output, with a 1M token context window. This...",
+    "context_length": 1000000,
+    "architecture": {
+      "modality": "text+image+video->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Qwen3",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000004",
+      "completion": "0.0000024"
+    },
+    "top_provider": {
+      "context_length": 1000000,
+      "max_completion_tokens": 65536,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "response_format",
+      "seed",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/qwen/qwen3.5-plus-20260420/endpoints"
+    }
+  },
+  {
+    "id": "qwen/qwen3.6-27b",
+    "canonical_slug": "qwen/qwen3.6-27b-20260422",
+    "hugging_face_id": "Qwen/Qwen3.6-27B",
+    "name": "Qwen: Qwen3.6 27B",
+    "created": 1777255064,
+    "description": "Qwen3.6 27B is a dense 27-billion-parameter language model from the Qwen Team at Alibaba, released in April 2026. It features hybrid multimodal capabilities — accepting text, image, and video inputs...",
+    "context_length": 262144,
+    "architecture": {
+      "modality": "text+image+video->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Qwen3",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000032",
+      "completion": "0.0000032"
+    },
+    "top_provider": {
+      "context_length": 262144,
+      "max_completion_tokens": 81920,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/qwen/qwen3.6-27b-20260422/endpoints"
+    }
+  },
+  {
+    "id": "qwen/qwen3.6-35b-a3b",
+    "canonical_slug": "qwen/qwen3.6-35b-a3b-20260415",
+    "hugging_face_id": "Qwen/Qwen3.6-35B-A3B",
+    "name": "Qwen: Qwen3.6 35B A3B",
+    "created": 1777260255,
+    "description": "Qwen3.6-35B-A3B is an open-weight multimodal model from Alibaba Cloud with 35 billion total parameters and 3 billion active parameters per token. It uses a hybrid sparse mixture-of-experts architecture combining Gated...",
+    "context_length": 262144,
+    "architecture": {
+      "modality": "text+image+video->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Qwen",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000001612",
+      "completion": "0.00000096525",
+      "input_cache_read": "0.0000001612"
+    },
+    "top_provider": {
+      "context_length": 262144,
+      "max_completion_tokens": 65536,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "top_k",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": 20
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/qwen/qwen3.6-35b-a3b-20260415/endpoints"
+    }
+  },
+  {
+    "id": "qwen/qwen3.6-flash",
+    "canonical_slug": "qwen/qwen3.6-flash",
+    "hugging_face_id": null,
+    "name": "Qwen: Qwen3.6 Flash",
+    "created": 1777261362,
+    "description": "Qwen3.6 Flash is a fast, efficient language model from Alibaba's Qwen 3.6 series. It supports text, image, and video input with a 1M token context window. Tiered pricing kicks in...",
+    "context_length": 1000000,
+    "architecture": {
+      "modality": "text+image+video->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Qwen3",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000025",
+      "completion": "0.0000015",
+      "input_cache_write": "0.0000003125"
+    },
+    "top_provider": {
+      "context_length": 1000000,
+      "max_completion_tokens": 65536,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "response_format",
+      "seed",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/qwen/qwen3.6-flash/endpoints"
+    }
+  },
+  {
+    "id": "qwen/qwen3.6-max-preview",
+    "canonical_slug": "qwen/qwen3.6-max-preview-20260420",
+    "hugging_face_id": null,
+    "name": "Qwen: Qwen3.6 Max Preview",
+    "created": 1777260242,
+    "description": "Qwen3.6-Max-Preview is a proprietary frontier model from Alibaba Cloud built on a sparse mixture-of-experts architecture with approximately 1 trillion total parameters. It is optimized for agentic coding, tool use, and...",
+    "context_length": 262144,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Qwen",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000104",
+      "completion": "0.00000624",
+      "input_cache_write": "0.0000013"
+    },
+    "top_provider": {
+      "context_length": 262144,
+      "max_completion_tokens": 65536,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "logprobs",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "response_format",
+      "seed",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/qwen/qwen3.6-max-preview-20260420/endpoints"
+    }
+  },
+  {
     "id": "qwen/qwen3.6-plus",
     "canonical_slug": "qwen/qwen3.6-plus-04-02",
     "hugging_face_id": "",
@@ -16469,53 +16994,6 @@
     "expiration_date": null,
     "links": {
       "details": "/api/v1/models/qwen/qwen3.6-plus-04-02/endpoints"
-    }
-  },
-  {
-    "id": "qwen/qwq-32b",
-    "canonical_slug": "qwen/qwq-32b",
-    "hugging_face_id": "Qwen/QwQ-32B",
-    "name": "Qwen: QwQ 32B",
-    "created": 1741208814,
-    "description": "QwQ is the reasoning model of the Qwen series. Compared with conventional instruction-tuned models, QwQ, which is capable of thinking and reasoning, can achieve significantly enhanced performance in downstream tasks,...",
-    "context_length": 131072,
-    "architecture": {
-      "modality": "text->text",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "tokenizer": "Qwen",
-      "instruct_type": "qwq"
-    },
-    "pricing": {
-      "prompt": "0.00000015",
-      "completion": "0.00000058"
-    },
-    "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": 131072,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "supported_parameters": [
-      "frequency_penalty",
-      "include_reasoning",
-      "max_tokens",
-      "reasoning",
-      "temperature",
-      "tool_choice",
-      "tools",
-      "top_k",
-      "top_p"
-    ],
-    "default_parameters": {},
-    "knowledge_cutoff": "2024-06-30",
-    "expiration_date": "2026-04-29",
-    "links": {
-      "details": "/api/v1/models/qwen/qwq-32b/endpoints"
     }
   },
   {
@@ -18028,8 +18506,8 @@
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.000002",
-      "completion": "0.000006",
+      "prompt": "0.00000125",
+      "completion": "0.0000025",
       "web_search": "0.005",
       "input_cache_read": "0.0000002"
     },
@@ -18124,6 +18602,69 @@
     "expiration_date": null,
     "links": {
       "details": "/api/v1/models/x-ai/grok-4.20-multi-agent-20260309/endpoints"
+    }
+  },
+  {
+    "id": "x-ai/grok-4.3",
+    "canonical_slug": "x-ai/grok-4.3-20260430",
+    "hugging_face_id": null,
+    "name": "xAI: Grok 4.3",
+    "created": 1777591821,
+    "description": "Grok 4.3 is a reasoning model from xAI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factual...",
+    "context_length": 1000000,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Grok",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000125",
+      "completion": "0.0000025",
+      "web_search": "0.005",
+      "input_cache_read": "0.0000002"
+    },
+    "top_provider": {
+      "context_length": 1000000,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logprobs",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/x-ai/grok-4.3-20260430/endpoints"
     }
   },
   {
@@ -18357,7 +18898,7 @@
   {
     "id": "xiaomi/mimo-v2.5",
     "canonical_slug": "xiaomi/mimo-v2.5-20260422",
-    "hugging_face_id": null,
+    "hugging_face_id": "XiaomiMiMo/MiMo-V2.5",
     "name": "Xiaomi: MiMo-V2.5",
     "created": 1776874269,
     "description": "MiMo-V2.5 is a native omnimodal model by Xiaomi. It delivers Pro-level agentic performance at roughly half the inference cost, while surpassing MiMo-V2-Omni in multimodal perception across image and video understanding...",
@@ -18417,7 +18958,7 @@
   {
     "id": "xiaomi/mimo-v2.5-pro",
     "canonical_slug": "xiaomi/mimo-v2.5-pro-20260422",
-    "hugging_face_id": null,
+    "hugging_face_id": "XiaomiMiMo/MiMo-V2.5-Pro",
     "name": "Xiaomi: MiMo-V2.5-Pro",
     "created": 1776874273,
     "description": "MiMo-V2.5-Pro is Xiaomi’s flagship model, delivering strong performance in general agentic capabilities, complex software engineering, and long-horizon tasks, with top rankings on benchmarks such as ClawEval, GDPVal, and SWE-bench Pro....",
@@ -19226,6 +19767,66 @@
     }
   },
   {
+    "id": "~anthropic/claude-haiku-latest",
+    "canonical_slug": "~anthropic/claude-haiku-latest",
+    "hugging_face_id": null,
+    "name": "Anthropic Claude Haiku Latest",
+    "created": 1777318492,
+    "description": "This model always redirects to the latest model in the Anthropic Claude Haiku family.",
+    "context_length": 200000,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "image",
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Router",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000001",
+      "completion": "0.000005",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000001",
+      "input_cache_write": "0.00000125"
+    },
+    "top_provider": {
+      "context_length": 200000,
+      "max_completion_tokens": 64000,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "response_format",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/~anthropic/claude-haiku-latest/endpoints"
+    }
+  },
+  {
     "id": "~anthropic/claude-opus-latest",
     "canonical_slug": "~anthropic/claude-opus-latest",
     "hugging_face_id": "",
@@ -19255,7 +19856,7 @@
     "top_provider": {
       "context_length": 1000000,
       "max_completion_tokens": 128000,
-      "is_moderated": true
+      "is_moderated": false
     },
     "per_request_limits": null,
     "supported_parameters": [
@@ -19281,6 +19882,384 @@
     "expiration_date": null,
     "links": {
       "details": "/api/v1/models/~anthropic/claude-opus-latest/endpoints"
+    }
+  },
+  {
+    "id": "~anthropic/claude-sonnet-latest",
+    "canonical_slug": "~anthropic/claude-sonnet-latest",
+    "hugging_face_id": null,
+    "name": "Anthropic Claude Sonnet Latest",
+    "created": 1777318368,
+    "description": "This model always redirects to the latest model in the Anthropic Claude Sonnet family.",
+    "context_length": 1000000,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Router",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000003",
+      "completion": "0.000015",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000003",
+      "input_cache_write": "0.00000375"
+    },
+    "top_provider": {
+      "context_length": 1000000,
+      "max_completion_tokens": 128000,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_completion_tokens",
+      "max_tokens",
+      "reasoning",
+      "response_format",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p",
+      "verbosity"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/~anthropic/claude-sonnet-latest/endpoints"
+    }
+  },
+  {
+    "id": "~google/gemini-flash-latest",
+    "canonical_slug": "~google/gemini-flash-latest",
+    "hugging_face_id": null,
+    "name": "Google Gemini Flash Latest",
+    "created": 1777318398,
+    "description": "This model always redirects to the latest model in the Google Gemini Flash family.",
+    "context_length": 1048576,
+    "architecture": {
+      "modality": "text+image+file+audio+video->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "file",
+        "audio",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Router",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000005",
+      "completion": "0.000003",
+      "image": "0.0000005",
+      "audio": "0.000001",
+      "web_search": "0.014",
+      "internal_reasoning": "0.000003",
+      "input_cache_read": "0.00000005",
+      "input_cache_write": "0.00000008333333333333334"
+    },
+    "top_provider": {
+      "context_length": 1048576,
+      "max_completion_tokens": 65536,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/~google/gemini-flash-latest/endpoints"
+    }
+  },
+  {
+    "id": "~google/gemini-pro-latest",
+    "canonical_slug": "~google/gemini-pro-latest",
+    "hugging_face_id": null,
+    "name": "Google Gemini Pro Latest",
+    "created": 1777318451,
+    "description": "This model always redirects to the latest model in the Google Gemini Pro family.",
+    "context_length": 1048576,
+    "architecture": {
+      "modality": "text+image+file+audio+video->text",
+      "input_modalities": [
+        "audio",
+        "file",
+        "image",
+        "text",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Router",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.000012",
+      "image": "0.000002",
+      "audio": "0.000002",
+      "web_search": "0.014",
+      "internal_reasoning": "0.000012",
+      "input_cache_read": "0.0000002",
+      "input_cache_write": "0.000000375"
+    },
+    "top_provider": {
+      "context_length": 1048576,
+      "max_completion_tokens": 65536,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/~google/gemini-pro-latest/endpoints"
+    }
+  },
+  {
+    "id": "~moonshotai/kimi-latest",
+    "canonical_slug": "~moonshotai/kimi-latest",
+    "hugging_face_id": null,
+    "name": "MoonshotAI Kimi Latest",
+    "created": 1777318428,
+    "description": "This model always redirects to the latest model in the MoonshotAI Kimi family.",
+    "context_length": 262142,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Router",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000074",
+      "completion": "0.00000349",
+      "input_cache_read": "0.00000014"
+    },
+    "top_provider": {
+      "context_length": 262142,
+      "max_completion_tokens": 262142,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "parallel_tool_calls",
+      "presence_penalty",
+      "reasoning",
+      "reasoning_effort",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/~moonshotai/kimi-latest/endpoints"
+    }
+  },
+  {
+    "id": "~openai/gpt-latest",
+    "canonical_slug": "~openai/gpt-latest",
+    "hugging_face_id": null,
+    "name": "OpenAI GPT Latest",
+    "created": 1777318334,
+    "description": "This model always redirects to the latest model in the OpenAI GPT family.",
+    "context_length": 1050000,
+    "architecture": {
+      "modality": "text+image+file->text",
+      "input_modalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Router",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000005",
+      "completion": "0.00003",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000005"
+    },
+    "top_provider": {
+      "context_length": 1050000,
+      "max_completion_tokens": 128000,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_completion_tokens",
+      "max_tokens",
+      "reasoning",
+      "response_format",
+      "seed",
+      "structured_outputs",
+      "tool_choice",
+      "tools"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/~openai/gpt-latest/endpoints"
+    }
+  },
+  {
+    "id": "~openai/gpt-mini-latest",
+    "canonical_slug": "~openai/gpt-mini-latest",
+    "hugging_face_id": null,
+    "name": "OpenAI GPT Mini Latest",
+    "created": 1777318471,
+    "description": "This model always redirects to the latest model in the OpenAI GPT Mini family.",
+    "context_length": 400000,
+    "architecture": {
+      "modality": "text+image+file->text",
+      "input_modalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Router",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000075",
+      "completion": "0.0000045",
+      "web_search": "0.01",
+      "input_cache_read": "0.000000075"
+    },
+    "top_provider": {
+      "context_length": 400000,
+      "max_completion_tokens": 128000,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_completion_tokens",
+      "max_tokens",
+      "reasoning",
+      "response_format",
+      "seed",
+      "structured_outputs",
+      "tool_choice",
+      "tools"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "knowledge_cutoff": "2025-08-31",
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/~openai/gpt-mini-latest/endpoints"
     }
   }
 ]
